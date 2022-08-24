@@ -11,4 +11,15 @@ export const getIngegrationAPI =  ()=> async (dispatch)=> {
   }
 };
 
+export const queryIngegrationAPI =  (query)=> async (dispatch)=> {
+  dispatch({type: INTEGRATIONS_LOADING});
+  try {
+    const res = await axios.get(`http://localhost:8080/integrations?q=${query}`);
+    dispatch({type: INTEGRATIONS_SUCCESS, payload: res.data});
+  } catch {
+    dispatch({type: INTEGRATIONS_ERROR});
+  }
+};
+
+
 
