@@ -1,0 +1,26 @@
+
+/* .searchContainer{} */
+
+.searchDiv{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(140, 133, 133, 0.784);
+    background-color: #fff;
+    margin-top: 2%;
+    margin-bottom: 2%;  
+    padding: 5px; 
+    border-radius: 15px; 
+}
+.searchDiv>input{    
+    width: 100%;
+    font-size: 30px;
+}
+.searchDiv>input:active{
+    border: none;
+}
+.searchIcon{
+  font-size: 30px;
+}
