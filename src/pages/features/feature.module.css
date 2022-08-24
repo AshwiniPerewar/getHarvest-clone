@@ -1,0 +1,25 @@
+.heading{
+    font-weight: 400;
+    text-decoration: none;
+    font-family: MuotoWeb,sans-serif;
+    font-style: normal;
+    color: #1d1e1c;
+    font-size: 50px;
+}
+.subheading{
+    font-weight: 400;
+    text-decoration: none;
+    font-family: MuotoWeb,sans-serif;
+    font-style: normal;
+    color: #1d1e1c;
+    font-size: 29px;
+}
+
+.feature_nav{
+    display: flex;
+    margin-top: 75px;
+    justify-content: space-around;
+   
+
+}
+
