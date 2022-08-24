@@ -1,0 +1,27 @@
+
+.harvestForc{    
+    border: 1px solid rgb(109, 103, 103);
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(115, 107, 107);
+}
+
+.socialIcons{
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: #565056;
+    cursor: pointer;
+}
+.socialIcons:hover{
+    color: #fa5d00;
+}
+.links{
+    text-decoration: none;
+    cursor: pointer;
+}
+.links:hover{
+    color: #fa5d00;
+}
