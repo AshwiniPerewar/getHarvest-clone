@@ -1,36 +1,30 @@
-
-
-.cardContainer{
+.cardMainDiv{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-around; 
-    align-items: center;
+    grid-template-columns: repeat(3, 1fr);    
     gap: 20px;  
-    padding: 20px; 
-}
-
-.cardContainer>div{
-    cursor: pointer;
-    width: 70%;
-    border-radius: 20px;
-    background-color: #fff;
     padding: 20px;    
 }
-
-.cardContainer>div>div>img{
+.cardMainDiv>div{
+    cursor: pointer;
+    width: 90%;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 20px; 
+    line-height: 3vh;    
+}
+.cardMainDiv>div>div>img{
     width: 50%;
 }
-
-.cardContainer>div>div>h1{
-    font-size: 25px;
+.cardMainDiv>div>div>h1{
+    margin-top: 10px;
+    font-size: 17px;
     font-weight: bold;
 }
-
-.cardContainer>div>div>p{
+.cardMainDiv>div>div>p{
     font-size: 15px;
 }
-
-.cardContainer>div:hover{
+.cardMainDiv>div:hover{
     background-color: rgba(217, 232, 229, 0.519);
 }
 
