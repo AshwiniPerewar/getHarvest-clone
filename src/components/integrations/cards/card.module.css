@@ -1,0 +1,38 @@
+
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around; 
+    align-items: center;
+    gap: 20px;  
+    padding: 20px; 
+}
+
+.cardContainer>div{
+    cursor: pointer;
+    width: 70%;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 20px;    
+}
+
+.cardContainer>div>div>img{
+    width: 50%;
+}
+
+.cardContainer>div>div>h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.cardContainer>div>div>p{
+    font-size: 15px;
+}
+
+.cardContainer>div:hover{
+    background-color: rgba(217, 232, 229, 0.519);
+}
+
+
+
