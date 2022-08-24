@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500&display=swap');
+
+.lNavContainer{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 22px 165px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 0.01vw;
+    font-size: 1.13vw;
+    color: black;
+}
+.imgDiv{
+    border-right: 1px solid rgb(215, 207, 207);
+    padding-right: 1.5vw;
+}
+.lnimage{
+    width: 10vw;
+    height: 4.1vh;
+}
+.linkDiv{
+    width: 59%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.activeLink{
+    color: #fa5d00;
+}
+.notActiveLink:hover{
+    color: #fa5d00;
+}
+.buttonDiv{
+    width: 21%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.tryButton{
+    background-color: #fa5d00;
+    font-size: 1.25vw;
+    font-weight: 550;
+    color: #fff;
+    padding: 9px 22px;
+    border-radius: 17px;
+}
+

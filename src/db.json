@@ -1,0 +1,27 @@
+{
+  "harvest_link": [
+    { "id": "2a3b4c5d", "linkName": "Home", "link": "" },
+    { "id": "3a3b4c6d", "linkName": "Why Harvest?", "link": "" },
+    { "id": "4a3b4c7d", "linkName": "Features", "link": "" },
+    { "id": "5a3b4c8d", "linkName": "Pricing", "link": "" },
+    { "id": "6a3b4c9d", "linkName": "Integrations", "link": "" },
+    { "id": "7a3b4c0d", "linkName": "Apps", "link": "" },
+    { "id": "8a3b4c1d", "linkName": "Security", "link": "" }
+  ],
+  "community_link": [
+    { "id": "1g3h74i11j", "linkName": "Customer stories", "link": "" },
+    { "id": "2g3h74i12j", "linkName": "Resources", "link": "" },
+    { "id": "3g3h74i13j", "linkName": "Webinars", "link": "" },
+    { "id": "4g3h74i14j", "linkName": "Help & support", "link": "" },
+    { "id": "5g3h74i15j", "linkName": "Integrate with Harvest", "link": "" },
+    { "id": "6g3h74i16j", "linkName": "Time Well Spent", "link": "" },
+    { "id": "7g3h74i17j", "linkName": "Time in This Time", "link": "" }
+  ],
+  "company_link": [
+    { "id": "2a3cc-45c5d", "linkName": "About us", "link": "" },
+    { "id": "3a3cc-45c6d", "linkName": "Blog", "link": "" },
+    { "id": "4a3cc-45c7d", "linkName": "Careers", "link": "" },
+    { "id": "5a3cc-45c8d", "linkName": "Legal", "link": "" },
+    { "id": "6a3cc-45c9d", "linkName": "Contact us", "link": "" }
+  ]
+}
