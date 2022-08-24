@@ -1,12 +1,13 @@
 import React from 'react'
 import { Box, Image, Text, Button, Container, Flex, Grid } from '@chakra-ui/react'
-import Company from './Company'
+import CompanyLogo from './CompanyLogo'
 
 const Home = () => {
   return (
+
     <Container bgColor="#fff8f1" maxW="100%">
       {/* Finally div */}
-
+      
       <Box width="70%" margin="auto">
       <Flex width="30%" margin="auto">
       <Image src="https://res.cloudinary.com/spiralyze/image/upload/v1657791092/Harvest/1029-Harvest-Home-Center-Align/Rate_stars_1.svg" margin="auto"/>
@@ -20,9 +21,9 @@ const Home = () => {
         </Box>
         <Image src="https://res.cloudinary.com/spiralyze/image/upload/f_auto/Harvest/1029-Harvest-Home-Center-Align/Hero_Image_2x.jpg" width="90%" margin="auto" marginTop="1rem"/>
       
-      {/* companies logo */}
+      {/* company logo */}
 
-      <Company/>
+      <CompanyLogo/>
 
       <Box borderTop="1px solid #fa5d00" width="102.7%" marginLeft="-1rem" marginTop="2rem"></Box>
 {/* Getting Started */}
@@ -78,7 +79,7 @@ const Home = () => {
         <Text marginTop="1rem" fontSize="18px" fontFamily="MuotoWeb - 400" color="#1d1e1c" fontWeight="400">Seamless invoicing and fast online payments.</Text>
         </Box>
        </Flex>
-       <Button bgColor="#1d1e1c" color="white" borderRadius="17px" marginLeft="-78%" marginTop="2.5rem" width="8rem">Learn more</Button>
+       <Button bgColor="#1d1e1c" color="white" borderRadius="17px" marginLeft="-78%"  width="8rem">Learn more</Button>
         
     </Container>
   )
