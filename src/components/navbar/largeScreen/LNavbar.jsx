@@ -12,7 +12,7 @@ const LNavbar = () => {
 
       <div className={styles.linkDiv}>
         <div className={styles.imgDiv}><NavLink to='/'><img className={styles.lnimage} src={harvest_logo} alt="harvest logo" /></NavLink></div>
-        <NaveLink to={'/wharvest'}>Why Harvest?</NaveLink>
+        <NaveLink to={'/whyharvest'}>Why Harvest?</NaveLink>
         <NaveLink to={'/features'}>Features</NaveLink>
         <NaveLink to={'/customers'}>Customers</NaveLink>
         <NaveLink to={'/integrations'}>Integrations</NaveLink>

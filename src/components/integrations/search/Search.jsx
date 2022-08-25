@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import styles from './search.module.css';
 import { BsSearch } from 'react-icons/bs';
 import { queryIngegrationAPI } from '../../../store/integrationReducer/integration.action';
@@ -15,7 +15,7 @@ export const Search = () => {
 
   useEffect(()=> {
     dispatch(queryIngegrationAPI({text: query, address: "integrations"}));
-  }, [query]);
+  }, [query,dispatch]);
 
   return (
     <form className={styles.searchDiv} onSubmit={handleSubmit} >

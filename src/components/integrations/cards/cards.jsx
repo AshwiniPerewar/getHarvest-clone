@@ -9,7 +9,7 @@ export const Cards = ({address}) => {
 
   useEffect(() => {
     dispatch(getIngegrationAPI(address));
-  }, []);
+  }, [address,dispatch]);
  
   return (
     <div>
