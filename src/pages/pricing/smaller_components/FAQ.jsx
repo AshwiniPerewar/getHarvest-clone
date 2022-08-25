@@ -60,9 +60,16 @@ const FAQ = () => {
                 <h2>
                   <AccordionButton
                     _hover={{ backgroundColor: "none" }}
-                    padding="20px 25px"
+                    padding="15px 25px"
+                    fontSize="40px"
+                    color="#fa5d00"
                   >
-                    <Box flex="1" textAlign="left" fontSize="22px">
+                    <Box
+                      flex="1"
+                      textAlign="left"
+                      fontSize="22px"
+                      color="#1d1e1c"
+                    >
                       {el.heading}
                     </Box>
                     <AccordionIcon />
