@@ -9,7 +9,7 @@ import { Integration } from './Integration'
 import { Customer } from './Customer'
 import Learning from './Learning'
 import Slideshow from './Slideshow'
-import { Start } from '../integrations/start/Start'
+import { Starttrack } from './Starttrack'
 const Home = () => {
   return (
 
@@ -22,7 +22,7 @@ const Home = () => {
      <Customer/>
      
       <Learning/>
-      <Start/>
+      <Starttrack/>
     </Container>
   )
 }

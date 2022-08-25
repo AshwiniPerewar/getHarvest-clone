@@ -40,7 +40,7 @@ const Slideshow = () => {
                  <Flex  marginTop="3rem"  width="100%"  gap="1rem" margin="auto">
            <Box   borderRight="1px solid #fa5d00"  borderLeft="1px solid #fa5d00" padding="2rem">
          <Text marginTop="2rem"className={slidestyle.customer_box_desc}>{el.desc}</Text>
-         <Text marginTop="2rem"className={slidestyle.customer_box_writer}>{el.writer}</Text>
+         <Text marginTop="2rem"className={slidestyle.customer_box_writer} >{el.writer}</Text>
        </Box>
         <Image width="50%" paddingRight="1.5rem" paddingLeft="0.5rem" borderRight="1px solid #fa5d00" src={el.img}/>
        </Flex>
