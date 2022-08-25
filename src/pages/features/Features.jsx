@@ -11,19 +11,19 @@ export const Features = () => {
      <Box className={styles.feature_nav} >
         <Box display={"flex"} border="1px solid red"  alignItems="center" borderRadius={"10px"} height="80px" width={"390px"} justifyContent="space-around"  >
             <img src="	https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-nav-time.svg" alt="" />
-            <Text fontSize={"x-large"}>Time tracking</Text>
+            <Text fontSize={"x-large"} >Time tracking</Text>
             <AiOutlineArrowDown size={"25px"}/>
         </Box>
         <Box display={"flex"} border="1px solid red"  alignItems="center" borderRadius={"10px"} height="80px" width={"390px"} justifyContent="space-around" >
             <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-nav-report.svg" alt="" />
-            <Text fontSize={"x-large"}>Report & analysis</Text>
+            <Text fontSize={"x-large"} >Report & analysis</Text>
             <AiOutlineArrowDown size={"25px"}/>
             
             
         </Box>
         <Box display={"flex"} border="1px solid red"  alignItems="center" borderRadius={"10px"} height="80px" width={"390px"} justifyContent="space-around" >
             <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-nav-invoice.svg" alt="" />
-            <Text fontSize={"x-large"}>Invoicing & payments</Text>
+            <Text fontSize={"x-large"} >Invoicing & payments</Text>
             <AiOutlineArrowDown size={"25px"} />
             
         </Box>
@@ -96,6 +96,7 @@ export const Features = () => {
             </Box>
         </Box>
     </Box>
+    
 
    <hr />
      
