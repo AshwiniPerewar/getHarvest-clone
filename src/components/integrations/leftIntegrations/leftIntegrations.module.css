@@ -1,0 +1,20 @@
+
+.leftContainer{
+    width: 50%;    
+    line-height: 70px;
+    font-size: large;
+    font-weight: bold;
+}
+.leftContainer>div>button{ 
+    cursor: pointer;  
+    padding: 0 25px;
+    border-radius: 15px;    
+}
+.leftContainer>div>button:hover{
+    background-color: rgba(194, 188, 188, 0.485);
+}
+.leftContainer>div>button:active{
+    color: #fa5d00;
+    background-color: rgba(194, 188, 188, 0.485);
+}
+

@@ -1,0 +1,11 @@
+
+.container{
+    background-color: #fff8f1;
+}
+
+.cardsContainer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    border-bottom: 1px solid red;
+}

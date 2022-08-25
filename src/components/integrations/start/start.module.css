@@ -1,0 +1,33 @@
+.startContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 13.5vh 10vw;    
+    background-color: #fff;
+    line-height: 7vh;
+}
+.startDiv{    
+    width: 48%;
+}
+.startDiv>h1{
+    font-size: 40px;
+}
+.startDiv>p{
+    font-size: 1.6rem;
+}
+.startDiv>div{
+    display: flex;
+    gap: 3rem;
+}
+.startDiv>div>button{
+    background-color: #fa5d00;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 0 2rem;
+    border-radius: 20px;
+}
+
+
+
+
