@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import styles from './search.module.css';
 import { BsSearch } from 'react-icons/bs';
-import axios from 'axios';
 import { queryIngegrationAPI } from '../../../store/integrationReducer/integration.action';
 
 export const Search = () => {
@@ -15,8 +14,8 @@ export const Search = () => {
   };
 
   useEffect(()=> {
-    dispatch(queryIngegrationAPI(query));
-  }, [query]);
+    dispatch(queryIngegrationAPI({text: query, address: "integrations"}));
+  }, [query,dispatch]);
 
   return (
     <form className={styles.searchDiv} onSubmit={handleSubmit} >

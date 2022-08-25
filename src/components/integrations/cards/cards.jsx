@@ -3,14 +3,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { getIngegrationAPI } from "../../../store/integrationReducer/integration.action";
 import styles from "./card.module.css";
 
-export const Cards = () => {
+export const Cards = ({address}) => {  
   const dispatch = useDispatch();
   const { loading, error, data } = useSelector((state) => state.integration);
 
   useEffect(() => {
-    dispatch(getIngegrationAPI());
-  }, []);
-
+    dispatch(getIngegrationAPI(address));
+  }, [address,dispatch]);
+ 
   return (
     <div>
       {loading ? (
@@ -29,8 +29,8 @@ export const Cards = () => {
               </div>
 
               <div>
-                <h1>{el.title}</h1>
-                <p>{el.discription}</p>
+                <h1>{el?.title}</h1>
+                <p>{el.description}</p>
               </div>
             </div>
           ))}

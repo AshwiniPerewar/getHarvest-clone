@@ -7,27 +7,54 @@
     line-height: 7vh;
 }
 .startDiv{    
-    width: 48%;
+    width: 50%;    
 }
 .startDiv>h1{
     font-size: 40px;
 }
 .startDiv>p{
-    font-size: 1.6rem;
+    font-size: 2vw;
 }
 .startDiv>div{
     display: flex;
-    gap: 3rem;
+    gap: 2vw;
 }
 .startDiv>div>button{
     background-color: #fa5d00;
-    font-size: 1.5rem;
+    font-size: 1.4vw;
     font-weight: 500;
     color: #fff;
-    padding: 0 2rem;
+    padding: 0 2vw;
     border-radius: 20px;
 }
 
+@media only screen and (max-width: 1550px){
+    .startDiv>p{
+        margin-top: 5vh;
+    }
+    .startDiv>div{
+        margin-top: 5vh;
+    }    
+}
+
+@media only screen and (max-width: 1250px){
+    .startContainer{
+        flex-direction: column-reverse;
+        gap: 5vh;
+    }
+    .startDiv{    
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 800px){   
+    .startDiv>div{
+        margin-top: 5vh;
+    }
+    .startDiv>div>button{
+        font-size: 1rem;
+    }
+}
 
 
 

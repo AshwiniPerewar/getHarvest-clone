@@ -1,5 +1,5 @@
 import React from 'react';
-import harvest_logo from '../../assets/harvest_logo.png';
+import harvest_logo from '../../assets/whiteHarvest.svg';
 import styles from './footer.module.css';
 import lin from '../../db.json';
 
@@ -17,7 +17,7 @@ import { AiOutlineTwitter, AiFillLinkedin, AiOutlineInstagram  } from 'react-ico
 
 export const Footer = () => {    
   return (
-    <Box bgColor='black' color='#fff'>
+    <Box bgColor='#1d1e1c' color='#fff'>
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid
           templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 1fr' }}
