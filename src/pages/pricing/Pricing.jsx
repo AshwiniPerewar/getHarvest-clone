@@ -1,9 +1,13 @@
-import { Flex, Heading, Switch, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Switch, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 import styles from "./pricing.module.css";
 import PriceBox from "./smaller_components/PriceBox";
-import proPng from "../../assets/pro-option.png"
-import CompanyLogo from "../../components/home/CompanyLogo"
+import proPng from "../../assets/pro-option.png";
+import CompanyLogo from "../../components/home/CompanyLogo";
+import FeaturesGrid from "./smaller_components/FeaturesGrid";
+import FlexBoxes from "./smaller_components/FlexBoxes";
+import FAQ from "./smaller_components/FAQ";
+import Review from "./smaller_components/Review";
 
 let data = [
   {
@@ -39,9 +43,9 @@ const Pricing = () => {
   const [plan, setPlan] = useState(false);
 
   return (
-    <div className={styles.container} >
+    <div className={styles.container}>
       <Heading fontSize="50px" fontWeight="400" textAlign="center">
-        Pricing
+        <a id="plans">Pricing</a>
       </Heading>
       <br />
       <Flex gap="15px" alignItems="center" justifyContent="center">
@@ -65,7 +69,28 @@ const Pricing = () => {
         <PriceBox data={data[0]} />
         {plan ? <PriceBox data={data[2]} /> : <PriceBox data={data[1]} />}
       </Flex>
-      <CompanyLogo/>
+      <CompanyLogo opacity={0.4} />
+      <Box borderTop="1px solid #fa5d00" width="100%" marginTop="2rem"></Box>
+      <Heading
+        textAlign="center"
+        fontSize="42px"
+        margin="80px 0px 40px 0px"
+        fontWeight="300"
+      >
+        Features
+      </Heading>
+      <FeaturesGrid />
+      <Box className={styles.hr} />
+      <FlexBoxes />
+      <Box borderTop="1px solid #fa5d00" width="100%" marginTop="2rem"></Box>
+      <FAQ />
+      <Box borderTop="1px solid #fa5d00" width="100%" marginTop="2rem"></Box>
+      <Review />
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <button className={styles.toPlansButton}>
+          <a href="#plans">{"Back to Plans & Pricing"}</a>
+        </button>
+      </div>
     </div>
   );
 };
