@@ -7,7 +7,7 @@ const Empower = () => {
   return (
     <div>
       {contents.map((i) => {
-        return <MidHarvest key={i.id} info={{...i}} />
+        return <MidHarvest key={i.id} content={{...i}} />
       })}
     </div>
   );
