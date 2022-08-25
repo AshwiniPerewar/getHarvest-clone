@@ -6,7 +6,7 @@ import styles from './lnavbar.module.css';
 
 const LNavbar = () => {
     const navigate = useNavigate();
-   
+      
   return (
     <div className={styles.lNavContainer}>
 

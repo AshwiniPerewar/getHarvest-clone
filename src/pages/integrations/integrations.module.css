@@ -1,4 +1,3 @@
-
 .container{
     background-color: #fff8f1;
 }
@@ -8,4 +7,10 @@
     margin: auto;
     display: flex;
     border-bottom: 1px solid red;
+}
+
+@media only screen and (max-width: 800px){
+    .cardsContainer{
+        width: 90%;
+    }
 }

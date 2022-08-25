@@ -28,5 +28,23 @@
     background-color: rgba(217, 232, 229, 0.519);
 }
 
+@media only screen and (max-width: 1250px){
+    .cardMainDiv{       
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cardMainDiv>div{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+   
+}
+
+@media only screen and (max-width: 650px){
+    .cardMainDiv{       
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 
