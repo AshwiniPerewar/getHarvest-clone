@@ -5,6 +5,8 @@ import { Footer } from '../components/footer/Footer';
 import { Customers } from '../pages/customers/Customers';
 import { Integrations } from '../pages/integrations/Integrations';
 import Home from "../components/home/Home"
+import { Whyharvest } from '../pages/wharvest/Whyharvest';
+
 import { Features } from '../pages/features/Features';
 
 import Pricing from '../pages/pricing/Pricing';
@@ -18,6 +20,7 @@ export const AllRoutes = () => {
           <Route path="/" element={<Home/>}/>
             <Route path='/customers' element={<Customers/>} />
             <Route path='/integrations' element={<Integrations/>} />
+            <Route path='/whyharvest' element={<Whyharvest/>} />
             <Route path='/features' element={<Features/>} />
             <Route path="/prcing" element={<Pricing/>}/>
         </Routes>
