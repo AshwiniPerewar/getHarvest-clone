@@ -41,6 +41,7 @@ const MidHarvest = ({ content }) => {
             <p>{content.quote_by}</p>
           </div>
         </div>
+        
         <div className= {styles.leftMid}>
           <h4>{content.heading}</h4>
           <p>{content.para}</p>
@@ -50,7 +51,10 @@ const MidHarvest = ({ content }) => {
           <button>Browse features</button>
         </div>
       </div>
+      <div className= {styles.line}></div>
+      
     </div>
+    
   );
 };
 

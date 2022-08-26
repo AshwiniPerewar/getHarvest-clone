@@ -1,14 +1,5 @@
-import React from "react";
-import {
-  Box,
-  Image,
-  Text,
-  Button,
-  Container,
-  Flex,
-  Grid,
-} from "@chakra-ui/react";
-
+import React from 'react'
+import { Box, Image, Text, Button, Container, Flex, Grid, Divider } from '@chakra-ui/react'
 const Company = ({ opacity }) => {
   return (
     <Box width="85%" margin="auto" marginTop="3rem">
