@@ -15,7 +15,7 @@ const Home = () => {
 
     <Container bgColor="#fff8f1" maxW="100%">
       <Introdiv/>
-      <CompanyLogo/>
+      <CompanyLogo opacity={0.2}/>
       <Getting/>
      <Features/>
   <Integration/>
