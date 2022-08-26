@@ -13,9 +13,7 @@ export const Customer = () => {
        <Text fontSize="39px" className={styles.feature_heading} >Helping teams thrive since 2006</Text>
        <Text fontSize="26px"  className={styles.feature_heading}  marginTop="1rem">Teams of all sizes, types, and industries trust Harvest to track their time.</Text>
        <Slideshow/>
-       <Button _hover={{cursor:"pointer",bgColor:"#1d1e1c"}} bgColor="#1d1e1c" color="white"  borderRadius="15px" fontSize="20px"  width="14rem" marginTop="2rem">Meet our customers</Button>
-        
-     
+       <Button _hover={{cursor:"pointer",bgColor:"#0e0d0dd9"}} bgColor="#1d1e1c" color="white"  borderRadius="15px" fontSize="20px"  width="14rem" marginTop="2rem">Meet our customers</Button>     
        </Box>
     </Box>
   )

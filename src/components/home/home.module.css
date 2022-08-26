@@ -108,3 +108,16 @@
     margin-top: 1rem;
     color: #fa5d00;
 }
+
+.intigrationimg{
+    background-image: url(../../assets/pro-option.png);
+    background-repeat: no-repeat;
+    background-position: 80% 0%;
+}
+
+.bgimg{
+    background-image: url(//19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/auras/aura-bottom-blur.jpg);
+    background-repeat: no-repeat;
+    background-size: 687px 410px;
+    background-position: 0 100%;
+}
