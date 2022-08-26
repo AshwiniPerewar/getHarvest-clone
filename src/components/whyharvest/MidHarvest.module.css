@@ -22,10 +22,15 @@
     width: 500px;
     line-height: 50px;
 }
-p {
+.leftMid>p {
     width: 600px;
     font-size: 1.25rem;
     font-weight: 450;
+}
+.line{
+    margin-top: 90px;
+    height: 1px;;
+    background-color: #fa5d00;
 }
 .point{
     margin-top: 1rem;

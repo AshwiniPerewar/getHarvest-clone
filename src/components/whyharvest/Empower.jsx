@@ -2,7 +2,7 @@ import React from "react";
 import data from "./content.json"
 import MidHarvest from "./MidHarvest";
 
-const Empower = () => {
+export const Empower = () => {
     const contents = data.contents
   return (
     <div>
@@ -13,4 +13,4 @@ const Empower = () => {
   );
 };
 
-export default Empower;
+// export default Empower;

@@ -1,13 +1,10 @@
 import React from 'react'
-import { Box, Image, Text, Button, Container, Flex, Grid, Divider } from '@chakra-ui/react'
-
-const Company = () => {
+import { Box, Image, Text, Button, Container, Flex, Grid } from '@chakra-ui/react'
+import styles from "./Logos.module.css";
+export const Logos = () => {
   return (
-    <Box width="90%" margin="auto" marginTop="3rem">
+    <Box width="90%" justifyContent="center" margin="auto" marginTop="1rem" paddingBottom="5rem">
       <Flex margin="auto">
-    <Text fontSize='lg' color="#fa5d00">70,000+
-   </Text><Text color="#777571 ">companies track time with Harvest</Text>
-   <Box borderTop="1px solid #fa5d00" width="70%" marginTop="0.9rem" marginLeft="6px"></Box>
    </Flex>
    <Flex  gap="3.5rem" marginTop="2rem">
     <Image opacity=".2" src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-vw.svg?noresize"/>
@@ -19,17 +16,8 @@ const Company = () => {
     <Image opacity=".2" src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-lululemon.svg?noresize"/>
     <Image opacity=".2" src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-yale.svg?noresize"/>
    </Flex>
-
-   <Divider
-        orientation="horizontal"
-        width={"95%"}
-        margin={"auto"}
-        bg={"#fa5d00"}
-        height="2px"
-      />
+   <div className={styles.line}></div>
       </Box>
       
   )
 }
-
-export default Company

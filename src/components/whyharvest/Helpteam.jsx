@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from './helpteam.module.css';
 
-const Helpteam = () => {
+export const Helpteam = () => {
     return (
         <div className={styles.helpcontainer}>
             <div className={styles.helpText}>
@@ -24,4 +24,4 @@ const Helpteam = () => {
     );
 };
 
-export default Helpteam;
+// export default Helpteam;
