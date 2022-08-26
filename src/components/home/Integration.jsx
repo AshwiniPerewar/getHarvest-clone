@@ -5,7 +5,7 @@ import styles from './home.module.css'
 export const Integration = () => {
 
   return (
-    <Box>
+    <Box className={styles.intigrationimg}>
         <Box className={styles.border}></Box>
 
     <Flex width="88%" margin="auto" marginTop="6rem" gap="4rem">
@@ -14,7 +14,7 @@ export const Integration = () => {
     <Text fontSize="20px" fontWeight="700" color="#fa5d00" fontFamily="MuotoWeb - 700">INTEGRATIONS</Text>
      <Text fontSize="39px" className={styles.feature_heading} lineHeight="48px">Integrated with the tools your team already knows and loves</Text>
      <Text fontSize="24px"  className={styles.feature_heading}  marginTop="1rem">Your favorite apps work seamlessly with Harvest so you can keep projects on track however you work.</Text>
-     <Button bgColor="#1d1e1c" _hover={{cursor:"pointer",bgColor:"#1d1e1c"}} color="white"  borderRadius="15px" fontSize="20px"  width="14rem" marginTop="2rem">Browse Integrations</Button>
+     <Button bgColor="#1d1e1c" _hover={{cursor:"pointer",bgColor:"#0e0d0dd9"}} color="white"  borderRadius="15px" fontSize="20px"  width="14rem" marginTop="2rem">Browse Integrations</Button>
     </Box>
   </Flex>
   </Box>

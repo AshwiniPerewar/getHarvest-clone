@@ -2,8 +2,7 @@ import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import slidestyle from './slide.module.css'
-import { Box, Image, Text, Button, Container, Flex, Grid, Input } from '@chakra-ui/react'
-import styles from './home.module.css'
+import { Box, Image, Text, Flex } from '@chakra-ui/react'
 
 const slideImages = [
 
@@ -21,14 +20,6 @@ const properties={
 indicators: true,
 };
 
-// const slidestyle={
-
-//     display: "flex",
-//     alignItems: "center",
-//     justifyContent: "center",
-//     backgroundSize: "cover",
-//     height: "350px"
-// }
 
 const Slideshow = () => {
     return (
