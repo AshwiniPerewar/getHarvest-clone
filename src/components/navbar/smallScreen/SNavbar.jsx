@@ -84,7 +84,7 @@ const SNavbar = () => {
                 <ButtonLink1 to={'/integrations'} >Integrations</ButtonLink1>
               </Box>
               <Box borderTop="1px solid #4a4b49" borderBottom="1px solid #4a4b49">
-                <ButtonLink1 to={'/prcing'} >Pricing</ButtonLink1>
+                <ButtonLink1 to={'/pricing'} >Pricing</ButtonLink1>
               </Box>
             </Box>
             <Flex justify="space-between" align="center">
