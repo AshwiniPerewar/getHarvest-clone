@@ -16,7 +16,7 @@ const LNavbar = () => {
         <NaveLink to={'/features'}>Features</NaveLink>
         <NaveLink to={'/customers'}>Customers</NaveLink>
         <NaveLink to={'/integrations'}>Integrations</NaveLink>
-        <NaveLink to={'/prcing'}>Pricing</NaveLink>
+        <NaveLink to={'/pricing'}>Pricing</NaveLink>
       </div>
 
       <div className={styles.buttonDiv}>
