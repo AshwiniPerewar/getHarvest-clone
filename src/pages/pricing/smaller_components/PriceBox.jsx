@@ -3,9 +3,9 @@ import React from "react";
 import styles from "../pricing.module.css";
 import proPng from "../../../assets/pro-option.png";
 
-const PriceBox = ({ data }) => {
+const PriceBox = ({ data,bg }) => {
   return (
-    <div className={styles.priceBox}>
+    <div className={bg ? styles.priceBoxWithBG : styles.priceBox}>
       <Flex justifyContent="space-between" marginBottom="32px">
         <Box>
           <Heading

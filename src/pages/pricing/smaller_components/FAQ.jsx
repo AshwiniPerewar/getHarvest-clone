@@ -51,7 +51,7 @@ const FAQ = () => {
           Frequently asked questions
         </Heading>
         <VStack width="50%" borderBottom="1px solid #fa5d00">
-          <Accordion width="100%" defaultIndex={[0]} allowMultiple>
+          <Accordion width="100%" allowMultiple>
             {data.map((el) => (
               <AccordionItem
                 _hover={{ backgroundColor: "#fff0df" }}
@@ -63,6 +63,7 @@ const FAQ = () => {
                     padding="15px 25px"
                     fontSize="40px"
                     color="#fa5d00"
+                    _expanded={{ bg: "#fff0df" }}
                   >
                     <Box
                       flex="1"

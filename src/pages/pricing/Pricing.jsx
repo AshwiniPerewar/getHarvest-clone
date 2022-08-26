@@ -66,8 +66,8 @@ const Pricing = () => {
         Save <span style={{ color: "black" }}>10%</span> with annual plan
       </Text>
       <Flex justifyContent="center" gap="40px" paddingBottom="77px">
-        <PriceBox data={data[0]} />
-        {plan ? <PriceBox data={data[2]} /> : <PriceBox data={data[1]} />}
+        <PriceBox data={data[0]} bg={false}/>
+        {plan ? <PriceBox data={data[2]} bg={true}/> : <PriceBox data={data[1]} bg={true}/>}
       </Flex>
       <CompanyLogo opacity={0.4} />
       <Box borderTop="1px solid #fa5d00" width="100%" marginTop="2rem"></Box>
@@ -84,13 +84,9 @@ const Pricing = () => {
       <FlexBoxes />
       <Box borderTop="1px solid #fa5d00" width="100%" marginTop="2rem"></Box>
       <FAQ />
-      <Box borderTop="1px solid #fa5d00" width="100%" marginTop="2rem"></Box>
+      <Box borderTop="1px solid #fa5d00" width="100%"></Box>
       <Review />
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <button className={styles.toPlansButton}>
-          <a href="#plans">{"Back to Plans & Pricing"}</a>
-        </button>
-      </div>
+      
     </div>
   );
 };
