@@ -8,17 +8,25 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import logo_Image from "../../../assets/harvest_logo.png";
 import styles from "./welcome.module.css";
 
-const Welcome = () => {
+const Welcome = ({handleTeam}) => {
+  // console.log(data);
   const [disable, setDisable] = useState(true);
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     if (e.target.value == "select") {
       setDisable(true);
     } else setDisable(false);
+    handleTeam(e.target.value)
   };
+
+  const goToNext = () => {
+    navigate("/welcome/jtbd")
+  }
   return (
     <div className={styles.welcomePage}>
       <div className={styles.welcomePageDiv}>
@@ -69,6 +77,7 @@ const Welcome = () => {
             width="100%"
             margin="20px"
             _hover={{ backgroundColor: "rgb(3, 122, 3)" }}
+            onClick={goToNext}
           >
             Next
           </Button>

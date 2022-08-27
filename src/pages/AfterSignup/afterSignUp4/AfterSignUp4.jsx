@@ -13,18 +13,26 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import logo_Image2 from "../../../assets/harvest_logo.png";
 import styles from "../afterSignUp2/aftersignup2.module.css";
 
-const AfterSignUp4 = () => {
+const AfterSignUp4 = ({ handleHours }) => {
   const [values, setValues] = useState([]);
   const [other, setOther] = useState(false);
+  const navigate = useNavigate();
+  const goToNext = () => {
+    navigate("/welcome/personal_reminders")
+  }
   const handleChange = (e) => {
     let { value } = e.target;
     if (value === "another") {
       setOther(true);
-    } else {
+    } else if (value === "35" || value === "40") {
       setOther(false);
+    }
+    if (value !== "another") {
+      handleHours(+e.target.value);
     }
   };
 
@@ -96,6 +104,7 @@ const AfterSignUp4 = () => {
                   width="50%"
                   backgroundColor="white"
                   borderColor="rgba(29,30,28,.3)"
+                  onChange={handleChange}
                 >
                   {values.map((value) => (
                     <option key={value} value={value}>
@@ -107,18 +116,21 @@ const AfterSignUp4 = () => {
               </Flex>
             ) : null}
           </div>
-          <Button 
-          backgroundColor="#188433"
-          borderColor="none"
-          color="#fff"
-          fontWeight="600"
-          height="40px"
-          borderRadius="10px"
-          fontSize="16px"
-          width="100%"
-          margin="20px"
-          _hover={{ backgroundColor: "rgb(3, 122, 3)" }}
-          >Set capacity</Button>
+          <Button
+            backgroundColor="#188433"
+            borderColor="none"
+            color="#fff"
+            fontWeight="600"
+            height="40px"
+            borderRadius="10px"
+            fontSize="16px"
+            width="100%"
+            margin="20px"
+            _hover={{ backgroundColor: "rgb(3, 122, 3)" }}
+            onClick={goToNext}
+          >
+            Set capacity
+          </Button>
         </VStack>
       </div>
     </div>

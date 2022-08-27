@@ -11,13 +11,17 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo_Image2 from "../../../assets/harvest_logo.png";
 import styles from "../afterSignUp2/aftersignup2.module.css";
 import InputBox from "./InputBox";
 
 const AfterSignUp6 = () => {
   const [change, setChange] = useState(1);
+  const navigate = useNavigate();
+  const goToNext = () => {
+    navigate("/welcome/marketing")
+  }
   const handleChange = (e) => {
     setChange(+e.target.value);
   };
@@ -146,11 +150,12 @@ const AfterSignUp6 = () => {
             width="100%"
             margin="20px"
             _hover={{ backgroundColor: "rgb(3, 122, 3)" }}
+            onClick={goToNext}
           >
             Create Project
           </Button>
           <Link
-            to=""
+            to="/welcome/marketing"
             style={{
               textDecoration: "underline",
               fontSize: "15px",
