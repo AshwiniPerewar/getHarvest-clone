@@ -27,6 +27,10 @@
     background-color: #242522d8;
 }
 
-
-
+@media only screen and (max-width: 800px){
+    .buildContainer{
+        flex-direction: column;
+        padding: 14vh 0vw;
+    }    
+}
 

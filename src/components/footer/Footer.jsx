@@ -17,11 +17,11 @@ import { AiOutlineTwitter, AiFillLinkedin, AiOutlineInstagram  } from 'react-ico
 
 export const Footer = () => {    
   return (
-    <Box bgColor='#1d1e1c' color='#fff'>
-      <Container as={Stack} maxW={'6xl'} py={10}>
+    <Box bgColor='#1d1e1c' color='#fff' >
+      <Container as={Stack} maxW={'7xl'} py={20}>
         <SimpleGrid
           templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 1fr' }}
-          spacing={8}>
+          spacing={20} mb={10} fontSize={'lg'}>
 
           <Stack spacing={6}>
             <Box></Box>            
@@ -57,7 +57,7 @@ export const Footer = () => {
             </Link>         
         </Box>
 
-        <Flex justify='space-between'>
+        <Flex justify='space-between' pt='10' fontWeight={700} >
             <Box>© 2006-2022 Harvest</Box>
             <Flex gap='4'>
                 <Flex className={styles.socialIcons}>
