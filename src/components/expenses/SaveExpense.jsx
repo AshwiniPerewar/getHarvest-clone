@@ -15,7 +15,6 @@ const initvalue = {
   amount: "",
 };
 export const SaveExpense = ({ handleButton }) => {
-  //eslint-disable-next-line
   const projectNames = ["Cloning", "Harvest", "Masai"];
   const categories = [
     "Entertainment",
@@ -26,49 +25,34 @@ export const SaveExpense = ({ handleButton }) => {
     "Transportation",
   ];
   const [formState, setFormState] = useState(initvalue);
-  //eslint-disable-next-line
-  const { date, projectName, category, notes, billable, amount } = formState;
+  const { date, notes, billable, amount } = formState;
 
   const expenseList = useSelector((state) => state.expense.expenseList);
   const dispatch = useDispatch();
   const isLoading = useSelector((state) => state.expense.isLoading);
-  //eslint-disable-next-line
   const isError = useSelector((state) => state.expense.isError);
   //const userID = useSelector(state => state.auth.uid)
   const userID = useSelector((state) => state.auth.uid);
   const [clientObj,setClientObj]=useState([]);
   const ProjectDet = () => {
-    // let obj=[]
-    // let status=true
-    // let newar=[];
+   
     axios.get(`https://c2ec8.sse.codesandbox.io/harvest?userId=${userID}`)
       .then((res) => { 
         
-        // newar = obj?.filter((items)=>items.userID===userID);
         console.log(res.data);
         setClientObj(res.data);
       
-
-        // console.log(obj);
-        // console.log(newar);
       })
       .catch((er) => console.log(er));
    
    
   };
-  // ProjectDet();
-  //eslint-disable-next-line
   useEffect(()=>{
     ProjectDet();
-    //eslint-disable-next-line
   },[])
 
 
-  // if (isError) {
-  //   alert("Error in Uploading");
-  // }
-  
-  //const date1 = new Date().toLocaleDateString();
+
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -83,9 +67,9 @@ export const SaveExpense = ({ handleButton }) => {
     console.log(expenseList);
     const upLoad = savedExpense(formState, userID);
     dispatch(upLoad);
-    //console.log(formState);
+
   };
-  // console.log(date);
+ 
   return (
     <>
       {/* <button onClick={handleButton}>Change</button> */}
@@ -115,11 +99,7 @@ export const SaveExpense = ({ handleButton }) => {
             <option value="" >
               Choose a project...
             </option>
-            {/* {projectNames?.map((items) => (
-              <option key={items} value={items}>
-                {items}
-              </option>
-            ))} */}
+            
             {clientObj?.map((item)=>
                                 <option value={item.pname} >{item.pname}</option>)}
           </select>
@@ -147,7 +127,7 @@ export const SaveExpense = ({ handleButton }) => {
               className={styles.NotesInputbox}
             ></textarea>
           </div>
-          {/* style={{ background: "#f4f4f4", width: "400px", margin: "10px" }} */}
+          
           <p>
             <input
               type="checkbox"
@@ -179,13 +159,6 @@ export const SaveExpense = ({ handleButton }) => {
           </div>
         </div>
       </div>
-
-      {/* {
-          expenseList?.map((item)=>(<div key={item.id}>
-              {item.projectName}
-          </div>))
-      } */}
-      {/* <DisplayExpense /> */}
     </>
   );
 };
