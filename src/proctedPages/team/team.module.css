@@ -1,0 +1,28 @@
+.leftarrow{
+    border:0.5px solid #cececd;
+     border-top-left-radius:5px;
+     border-bottom-left-radius:5px;
+     border-right: none;
+     padding:4px 8px;
+}
+
+.rightarrow{
+    border:1px solid #cececd;
+     border-top-right-radius:5px;
+     border-bottom-right-radius:5px;
+     padding:4px 8px;
+}
+
+.weekheading{
+    font-size: 30px;
+    font-family: Muoto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 36px;
+    color: #1d1e1c;
+    font-weight: 400;
+}
+
+.border{
+    border-bottom:"1px solid black";
+     margin-top:1rem;
+     
+}
