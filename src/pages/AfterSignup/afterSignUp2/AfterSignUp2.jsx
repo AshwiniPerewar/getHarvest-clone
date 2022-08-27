@@ -11,11 +11,13 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import logo_Image2 from "../../../assets/harvest_logo.png";
 import styles from "./aftersignup2.module.css";
 
 const AfterSignUp2 = () => {
   const [disable, setDisable] = useState(true);
+  const navigate = useNavigate();
   const [checkedItems, setCheckedItems] = useState([
     false,
     false,
@@ -23,6 +25,10 @@ const AfterSignUp2 = () => {
     false,
   ]);
   const [other, setOther] = useState(false);
+
+  const goToNext = () => {
+    navigate("/welcome/modules")
+  }
 
   useEffect(() => {
     let count = 0;
@@ -146,6 +152,7 @@ const AfterSignUp2 = () => {
             width="100%"
             margin="20px"
             _hover={{ backgroundColor: "rgb(3, 122, 3)" }}
+            onClick={goToNext}
           >
             Next
           </Button>

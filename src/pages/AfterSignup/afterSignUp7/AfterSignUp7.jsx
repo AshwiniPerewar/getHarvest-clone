@@ -12,17 +12,19 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo_Image2 from "../../../assets/harvest_logo.png";
 import styles from "../afterSignUp2/aftersignup2.module.css";
 import { IndustryData } from "./IndustryData";
 
-const AfterSignUp7 = () => {
-  const [change, setChange] = useState(1);
-  const handleChange = (e) => {
-    setChange(+e.target.value);
-  };
+const AfterSignUp7 = ({data}) => {
+
+  const goToNext = async () => {
+    await axios.post("http://localhost:8080/userData",data);
+  }
+ 
   return (
     <div className={styles.welcomePage}>
       <div className={styles.welcomePageDiv}>
@@ -87,6 +89,7 @@ const AfterSignUp7 = () => {
               fontSize="16px"
               width="100%"
               _hover={{ backgroundColor: "rgb(3, 122, 3)" }}
+              onClick={goToNext}
             >
               Done! Take me to my account
             </Button>
