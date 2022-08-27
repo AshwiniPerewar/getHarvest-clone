@@ -4,7 +4,7 @@ import { Navbar } from "../components/navbar/Navbar";
 import { Footer } from "../components/footer/Footer";
 import { Customers } from "../pages/customers/Customers";
 import { Integrations } from "../pages/integrations/Integrations";
-import Home from "../components/home/Home";
+import Home from "../pages/home/Home";
 import { Whyharvest } from "../pages/wharvest/Whyharvest";
 
 import { Features } from "../pages/features/Features";
