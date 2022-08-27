@@ -5,6 +5,7 @@ import {AiOutlineArrowDown} from "react-icons/ai"
 import { Compo } from './Compo'
 import data from './feature'
 import { useRef } from 'react'
+import { Starttrack } from '../../components/home/Starttrack'
 export const Features = () => {
     const timer=useRef()
     const report=useRef()
@@ -288,22 +289,7 @@ Get paid fast with online payments</Text>
     
 
     
-     <Box  mt="10%"  >
-     <Box display={"flex"} alignItems="center" mt="10%" >
-        <Box ml="2%" fontSize={"large"} fontWeight={"400"} >
-            <Text align={"left"}  fontSize="4xl">Start tracking time today</Text>
-            <Box fontWeight={"500"} fontSize="22px" mt={"20px"} paddingRight="30px" >Join 70,000+ companies spending their time wisely with Harvest.</Box>
-            <Button colorScheme={"orange"} size="lg" borderRadius={"10px"} fontFamily="MuotoWeb,sans-serif">Start your free trial</Button>
-            Free 30-day trial. No credit card required.
-        </Box>
-        <Box >
-            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illoglyphs/footer-illo-comp.svg" alt="" />
-        </Box>
-
-     </Box>
-    
-     
-     </Box>
+<Starttrack/>
     
 
    <hr />
