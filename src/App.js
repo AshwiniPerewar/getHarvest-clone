@@ -7,9 +7,9 @@ import { Features } from './pages/features/Features';
 function App() {
   return (
     <div className="App">
-      {/* <AllRoutes/> */}
+     
       <Features/>
-      {/* <Compo/> */}
+     
     
     </div>
   );
