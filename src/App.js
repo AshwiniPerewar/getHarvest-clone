@@ -10,10 +10,7 @@ function App() {
     <div className="App">
     
       <AllRoutes/>
-      
-
-   
-    </div>
+      </div>
   );
 }
 
