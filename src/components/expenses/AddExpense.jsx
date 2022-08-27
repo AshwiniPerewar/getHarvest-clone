@@ -1,9 +1,9 @@
 import { Button, Input } from '@chakra-ui/react'
-import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { addExpense, editExpense, getExpense } from '../../store/expenseReducer/action'
+import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { addExpense, getExpense } from '../../store/expenseReducer/action'
 
-export const EditExpense = ({data}) => {
+export const AddExpense = () => {
     const dispatch=useDispatch()
     
     const [category, setcategery] = useState("")
@@ -11,25 +11,18 @@ export const EditExpense = ({data}) => {
     const [amount, setamount] = useState("")
     const [notes, setnotes] = useState("")
     const [project, setproject] = useState("")
-    
-    useEffect(() => {
-      if(data){
-        setamount(data.amount)
-        setdate(data.date)
-        setcategery(data.category)
-        setnotes(data.notes)
-        setproject(data.project)
-      }
-    }, [])
-    
+    const handleAdd=()=>{
+        const data={
+            date,amount,notes,project,category
+        }
+        dispatch(addExpense(data))
+        setdate("")
+        setamount("")
+        setnotes("")
+        setcategery("")
+        setproject("")
+        
 
-    const handleEdit=()=>{
-        let id=data.id
-         let datan={
-            date,category,amount,project,notes,id
-         }
-        dispatch(editExpense(datan))
-       
     }
   return (
     <div>
@@ -43,7 +36,7 @@ export const EditExpense = ({data}) => {
         <Input value={project} onChange={(e)=>setproject(e.target.value)} type="text" />
         not
         <Input value={notes} onChange={(e)=>setnotes(e.target.value)} type="text" />
-        <Button onClick={handleEdit}>Edit</Button>
+        <Button onClick={handleAdd}>Submit</Button>
     </div>
   )
 }

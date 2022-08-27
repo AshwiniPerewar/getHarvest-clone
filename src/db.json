@@ -622,6 +622,16 @@
       "fullUserDate": "2022-08-27T17:10:53.829Z",
       "id": 3
     }
+  ],
+  "expenses": [
+    {
+      "id":1,
+      "date":"27/08/2022",
+      "project":"Example client",
+      "category":"meal",
+      "notes":"abcd",
+      "amount":50
+    }
   ]
 
 }
