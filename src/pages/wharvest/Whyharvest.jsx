@@ -1,10 +1,10 @@
 import { Box } from '@chakra-ui/react'
 import React from 'react'
-import { Start } from '../../components/integrations/start/Start'
+import { Starttrack } from '../../components/home/Starttrack'
+// import { Start } from '../../components/integrations/start/Start'
 import {Empower} from '../../components/whyharvest/Empower'
 import {Helpteam} from '../../components/whyharvest/Helpteam'
 import { Logos } from '../../components/whyharvest/Logos'
-// import { TimeTracking } from '../../components/whyharvest/TimeTracking'
 
 
 export const Whyharvest = () => {
@@ -12,10 +12,9 @@ export const Whyharvest = () => {
     <div>
         <Helpteam />
         <Empower />
-        {/* <Box paddingBottom={20}> */}
         <Logos />
         
-        <Start />
+        <Starttrack />
     </div>
   )
 }
