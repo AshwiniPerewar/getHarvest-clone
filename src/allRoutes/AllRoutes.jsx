@@ -13,34 +13,28 @@ import Pricing from "../pages/pricing/Pricing";
 import WithoutNavFoot from "./WithoutNavFoot";
 import WithNavFoot from "./WithNavFoot";
 import SignIn from "../pages/signIn/SignIn";
+import { Time } from "../proctedPages/time/Time";
+import { Expenses } from "../proctedPages/expenses/Expenses";
 
 export const AllRoutes = () => {
   return (
-    <div>
-      {/* <Navbar/> */}
-      {/* <Routes>
-          <Route path="/" element={<Home/>}/>
-            <Route path='/customers' element={<Customers/>} />
-            <Route path='/integrations' element={<Integrations/>} />
-            <Route path='/whyharvest' element={<Whyharvest/>} />
-            <Route path='/features' element={<Features/>} />
-            <Route path="/pricing" element={<Pricing/>}/>
-
-        </Routes> */}
+    <div>      
       <Routes>
         <Route element={<WithoutNavFoot />}>
           <Route path="/signin" element={<SignIn />} />
+          <Route path="/time" element={<Time />} />
+          <Route path="/express" element={<Expenses />} />
         </Route>
+
         <Route element={<WithNavFoot />}>
           <Route path="/" element={<Home />} />
           <Route path="/customers" element={<Customers />} />
           <Route path="/integrations" element={<Integrations />} />
           <Route path="/whyharvest" element={<Whyharvest />} />
           <Route path="/features" element={<Features />} />
-          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/pricing" element={<Pricing />} />          
         </Route>
-      </Routes>
-      {/* <Footer/>      */}
+      </Routes>      
     </div>
   );
 };
