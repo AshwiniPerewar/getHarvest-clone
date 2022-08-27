@@ -1,0 +1,28 @@
+.logoImage1 {
+    width: 35%;
+    margin: auto;
+    padding: 20px 0px 40px 0px;
+  }
+  .welcomePageDiv {
+    background-image: url(//res.cloudinary.com/spiralyze/image/upload/f_auto/Harvest/Test-3001-free-trial-spz-baseline/background-min.jpg);
+    background-size: 1440px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: #fff8f1;
+  }
+  .welcomePage {
+    height: 100vh;
+    background-color: #fff8f1;
+  }
+  .mainWelcomeDiv {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 4vh 0;
+    width: 35%;
+    margin: auto;
+    gap: 20px;
+  }
+
+  
