@@ -5,7 +5,7 @@ import styles from './leftIntegrations.module.css';
 
 export const LeftIntegrations = ({whichLink, address}) => {
   const dispatch = useDispatch();
-
+   
   return (
     <div className={styles.leftContainer}>
       {whichLink.map((text)=> (

@@ -37,10 +37,6 @@
     }
 }
 
-@media only screen and (max-width: 800px){
-   
-}
-
 @media only screen and (max-width: 650px){
     .cardMainDiv{       
         grid-template-columns: repeat(1, 1fr);
