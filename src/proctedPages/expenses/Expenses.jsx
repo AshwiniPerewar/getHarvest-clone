@@ -25,3 +25,6 @@ export const Expenses = () => {
     </div>
   )
 };
+
+
+// Expenses all functionality updated
