@@ -1,18 +1,4 @@
 {
-  "timeDatas": [
-    {
-      "client": "option2",
-      "design": "Marketing",
-      "optionaldata": "abcdef",
-      "stoptime": "454",
-      "day": "Saturday",
-      "date": 27,
-      "month": "August",
-      "year": 2022,
-      "fullUserDate": "2022-08-27T17:10:53.829Z",
-      "id": 1
-    }
-  ],
   "clientLogo": [
     {
       "id": "a9d2065c4481",
@@ -598,6 +584,44 @@
   "userData": {
     "team": "1",
     "hours": 15
-  }
+  },
+  "timeDatas": [
+    {
+      "client": "Your client",
+      "design": "Marketing",
+      "optionaldata": "abcdef",
+      "stoptime": "454",
+      "day": "Saturday",
+      "date": 27,
+      "month": "August",
+      "year": 2022,
+      "fullUserDate": "2022-08-27T17:10:53.829Z",
+      "id": 1
+    },
+    {
+      "client": "roushan",
+      "design": "Marketing",
+      "optionaldata": "abcdef",
+      "stoptime": "454",
+      "day": "Saturday",
+      "date": 27,
+      "month": "August",
+      "year": 2022,
+      "fullUserDate": "2022-08-27T17:10:53.829Z",
+      "id": 2
+    },
+    {
+      "client": "shushant",
+      "design": "Marketing",
+      "optionaldata": "abcdef",
+      "stoptime": "454",
+      "day": "Saturday",
+      "date": 27,
+      "month": "August",
+      "year": 2022,
+      "fullUserDate": "2022-08-27T17:10:53.829Z",
+      "id": 3
+    }
+  ]
 
 }
