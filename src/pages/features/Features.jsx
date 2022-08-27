@@ -31,10 +31,10 @@ export const Features = () => {
     }
 
   return (
-    <Box margin={"auto"}>
-     <h1 className={styles.heading}>Everything your team needs to keep ticking</h1>
-     <h3 className={styles.subheading}>Intuitive time tracking and powerful insights that help your team thrive.</h3>
-     <Box className={styles.feature_nav} >
+    <Box  width={"90%"} margin="auto" bg="#fff8f1" >
+     <Text fontWeight={"400"} fontSize="50px" >Everything your team needs to keep ticking</Text>
+     <Text fontWeight={"400"} fontSize="29px" >Intuitive time tracking and powerful insights that help your team thrive.</Text>
+     <Box display={"flex"} mt="7%"  gap="5%" >
         <Box display={"flex"} border="1px solid red"  alignItems="center" borderRadius={"10px"} height="80px" width={"390px"} justifyContent="space-around"  >
             <img src="	https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-nav-time.svg" alt="" />
             <Text fontSize={"x-large"} _hover={{color:"orange",cursor:"pointer"}} onClick={timermove} >Time tracking</Text>
@@ -59,10 +59,10 @@ export const Features = () => {
 
      <Box borderY={"1px solid red"} mt="10%"  >
      <Box display={"flex"} alignItems="center" mt="10%" ref={timer} >
-        <Box ml="15px">
+        <Box >
             <Text align={"left"} color="#fb701e" fontSize="4xl">Time tracking</Text>
             <Box fontWeight={"500"} fontSize="22px" mt={"20px"} paddingRight="30px" >An intuitive, lightweight time tracking experience that’s easy to adopt and use every day.</Box>
-            <Button colorScheme={"orange"} size="lg" borderRadius={"10px"} fontFamily="MuotoWeb,sans-serif">Start your free trial</Button>
+            <Button color={"white"} bg="#fa5d00" size="lg" borderRadius={"10px"} mt={"10%"}>Start your free trial</Button>
         </Box>
         <Box border={"1px solid black"}  >
             <img src="https://www.getharvest.com/hs-fs/hubfs/screenshot-features-timesheets.png?width=1181&name=screenshot-features-timesheets.png" alt="" />
@@ -132,7 +132,7 @@ export const Features = () => {
         <Box ml="15px">
             <Text align={"left"} color="#fb701e" fontSize="4xl">Reports & analysis</Text>
             <Box fontWeight={"500"} fontSize="22px" mt={"20px"} paddingRight="30px" >A wide selection of visual reports keep projects running smoothly and your team supported.</Box>
-            <Button colorScheme={"orange"} size="lg" borderRadius={"10px"} fontFamily="MuotoWeb,sans-serif">Start your free trial</Button>
+            <Button color={"white"} bg="#fa5d00" size="lg" borderRadius={"10px"} mt={"10%"}>Start your free trial</Button>
         </Box>
         <Box border={"1px solid black"}  >
             <img src="https://www.getharvest.com/hs-fs/hubfs/screenshot-features-projects.png?width=1181&name=screenshot-features-projects.png" alt="" />
@@ -236,17 +236,17 @@ export const Features = () => {
    
     <Box borderY={"1px solid red"} mt="10%"  >
      <Box display={"flex"} alignItems="center" mt="10%" ref={invoice} >
-        <Box ml="15px">
+        <Box >
             <Text align={"left"} color="#fb701e" fontSize="4xl">Invoicing & <br/> payments</Text>
             <Box fontWeight={"500"} fontSize="22px" mt={"20px"} paddingRight="30px" >Turn your team’s tracked time and expenses into invoices and collect payment quickly with integrated online payments.</Box>
-            <Button colorScheme={"orange"} size="lg" borderRadius={"10px"} fontFamily="MuotoWeb,sans-serif">Start your free trial</Button>
+            <Button color={"white"} bg="#fa5d00" size="lg" borderRadius={"10px"} mt={"10%"} >Start your free trial</Button>
         </Box>
         <Box border={"1px solid black"}  >
             <img src="https://www.getharvest.com/hs-fs/hubfs/screenshot-features-invoices-1.png?width=1181&name=screenshot-features-invoices-1.png" alt="" />
         </Box>
 
      </Box>
-     <Box display={"flex"} width="95%" margin={"auto"} justifyContent="space-between"  fontFamily={"MuotoWeb,sans-serif"}  mt="5%" pb="9%">
+     <Box display={"flex"} width="95%" margin={"auto"} justifyContent="space-between"    mt="5%" pb="9%">
         <Box width={"32%"}>
             <Box>
                 <Box display={"flex"} alignItems="center">
@@ -262,8 +262,7 @@ export const Features = () => {
             <Box>
                 <Box display={"flex"} alignItems="center">
                     <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-payments.svg" alt="" />
-                    <Text fontSize={"26px"}>
-Get paid fast with online payments</Text>
+                    <Text fontSize={"26px"}>Get paid fast with online payments</Text>
                 </Box>
             </Box>
             <Box fontWeight={"500"} fontSize="20px">
