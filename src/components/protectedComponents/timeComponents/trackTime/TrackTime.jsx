@@ -41,7 +41,7 @@ export const TrackTime = ({dateData}) => {
 
   useEffect(()=> {
     dispatch(getTimeAPI());
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
