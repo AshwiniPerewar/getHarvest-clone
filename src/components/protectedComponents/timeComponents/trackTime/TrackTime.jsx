@@ -18,12 +18,11 @@ import {
 import { IoMdAdd } from "react-icons/io";
 import { getTimeAPI, postTimeAPI } from "../../../../store/timeReducer/time.action";
 
-//dateData={dateData} edit={edit} setedit={setedit}
 export const TrackTime = ({dateData}) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [data, setData] = useState({});
   const dispatch = useDispatch();
-  const x = useSelector((state)=> state);
+  const {timeData} = useSelector((state)=> state.time);
 
   const handleChange = (e) => {
     const {name, value} = e.target;
@@ -32,8 +31,6 @@ export const TrackTime = ({dateData}) => {
       [name]: value
     });
   };
-
-  console.log(x);
   
   const onhandleSubmit = (e) => {
     e.preventDefault();
@@ -43,7 +40,7 @@ export const TrackTime = ({dateData}) => {
   };
 
   useEffect(()=> {
-    // dispatch(getTimeAPI());
+    dispatch(getTimeAPI());
   }, []);
 
   return (
@@ -70,9 +67,9 @@ export const TrackTime = ({dateData}) => {
             <form onSubmit={onhandleSubmit}>
               <Text>Project / Task</Text>
               <Select onChange={handleChange} name='client' placeholder="Example Client" mb='2'>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
+                {timeData.map((el)=> (
+                  <option key={el.id} value={`${el.client}`} >{el.client}</option>
+                ))}               
               </Select>
 
               <Select onChange={handleChange} name='design' placeholder="Design" mb='2'>               
