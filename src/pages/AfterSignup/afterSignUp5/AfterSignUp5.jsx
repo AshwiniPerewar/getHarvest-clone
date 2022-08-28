@@ -10,12 +10,16 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo_Image2 from "../../../assets/harvest_logo.png";
 import styles from "../afterSignUp2/aftersignup2.module.css";
 
 const AfterSignUp5 = () => {
   const [other, setOther] = useState(false);
+  const navigate = useNavigate();
+  const goToNext = () => {
+    navigate("/welcome/create_project")
+  }
   const handleChange = (e) => {
     let { value } = e.target;
     if (value === "another") {
@@ -96,11 +100,12 @@ const AfterSignUp5 = () => {
             width="100%"
             margin="20px"
             _hover={{ backgroundColor: "rgb(3, 122, 3)" }}
+            onClick={goToNext}
           >
             Enable personal reminders
           </Button>
           <Link
-            to=""
+            to="/welcome/create_project"
             style={{
               textDecoration: "underline",
               fontSize: "15px",

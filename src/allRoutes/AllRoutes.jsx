@@ -1,12 +1,9 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { Routes, Route } from "react-router-dom";
-import { Navbar } from "../components/navbar/Navbar";
-import { Footer } from "../components/footer/Footer";
 import { Customers } from "../pages/customers/Customers";
 import { Integrations } from "../pages/integrations/Integrations";
 import Home from "../pages/home/Home";
 import { Whyharvest } from "../pages/wharvest/Whyharvest";
-
 import { Features } from "../pages/features/Features";
 
 import Pricing from "../pages/pricing/Pricing";
@@ -21,21 +18,48 @@ import AfterSignUp4 from "../pages/AfterSignup/afterSignUp4/AfterSignUp4";
 import AfterSignUp5 from "../pages/AfterSignup/afterSignUp5/AfterSignUp5";
 import AfterSignUp6 from "../pages/AfterSignup/afterSignUp6/AfterSignUp6";
 import AfterSignUp7 from "../pages/AfterSignup/afterSignUp7/AfterSignUp7";
+import { Time } from "../proctedPages/time/Time";
+import { Expenses } from "../proctedPages/expenses/Expenses";
+
+let initialState = {
+  team:"",
+  hours:"",
+}
 
 export const AllRoutes = () => {
+  const [data,setData] = useState(initialState)
+  const [team,setTeam] = useState("0");
+  const [hours,setHours] = useState(35)
+  const handleTeam = (value) => {
+    setTeam(value)
+  }
+  const handleHours = (value) => {
+    setHours(value);
+  }
+
+  useEffect(() => {
+    setData({
+      team:team,
+      hours:hours
+    })
+  },[team,hours])
+
+
   return (
     <div>
       <Routes>
         <Route element={<WithoutNavFoot />}>
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/welcome" element={<Welcome />} />
-          <Route path="/welcome/jtbd" element={<AfterSignUp2 />} />
+          <Route path="/welcome" element={<Welcome handleTeam={handleTeam}/>} />
+          <Route path="/welcome/jtbd" element={<AfterSignUp2/>} />
           <Route path="/welcome/modules" element={<AfterSignUp3 />} />
-          <Route path="/welcome/capacity" element={<AfterSignUp4 />} />
+          <Route path="/welcome/capacity" element={<AfterSignUp4 handleHours={handleHours}/>} />
           <Route path="/welcome/personal_reminders" element={<AfterSignUp5 />} />
           <Route path="/welcome/create_project" element={<AfterSignUp6 />} />
-          <Route path="/welcome/marketing" element={<AfterSignUp7 />} />
+          <Route path="/welcome/marketing" element={<AfterSignUp7 data={data}/>} />
+          <Route path="/time" element={<Time />} />
+          <Route path="/expenses" element={<Expenses />} />
         </Route>
         <Route element={<WithNavFoot />}>
           <Route path="/" element={<Home />} />

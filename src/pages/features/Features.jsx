@@ -5,8 +5,12 @@ import {AiOutlineArrowDown} from "react-icons/ai"
 import { Compo } from './Compo'
 import data from './feature'
 import { useRef } from 'react'
+
 import { Starttrack } from '../../components/home/Starttrack'
 import { Start } from '../../components/integrations/start/Start'
+
+
+
 export const Features = () => {
     const timer=useRef()
     const report=useRef()

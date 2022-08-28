@@ -13,6 +13,7 @@ function App() {
     <div className="App">
     
       <AllRoutes/>
+
       
      
       
@@ -20,6 +21,9 @@ function App() {
 
    
     </div>
+
+      </div>
+
   );
 }
 
