@@ -582,6 +582,64 @@
   ],
   "userData": {
     "team": "1",
-    "hours": 15
-  }
+    "hours": 40
+  },
+  "timeDatas": [
+    {
+      "client": "Your client",
+      "design": "Marketing",
+      "optionaldata": "abcdef",
+      "stoptime": "454",
+      "day": "Saturday",
+      "date": 27,
+      "month": "August",
+      "year": 2022,
+      "fullUserDate": "2022-08-27T17:10:53.829Z",
+      "id": 1
+    },
+    {
+      "client": "roushan",
+      "design": "Marketing",
+      "optionaldata": "abcdef",
+      "stoptime": "454",
+      "day": "Saturday",
+      "date": 27,
+      "month": "August",
+      "year": 2022,
+      "fullUserDate": "2022-08-27T17:10:53.829Z",
+      "id": 2
+    },
+    {
+      "client": "shushant",
+      "design": "Marketing",
+      "optionaldata": "abcdef",
+      "stoptime": "454",
+      "day": "Saturday",
+      "date": 27,
+      "month": "August",
+      "year": 2022,
+      "fullUserDate": "2022-08-27T17:10:53.829Z",
+      "id": 3
+    }
+  ],
+  "expenses": [
+    {
+      "id": 1,
+      "date": "27/08/2022",
+      "project": "Example client",
+      "category": "meal",
+      "notes": "abcd",
+      "amount": 50
+    }
+  ],
+  "registeredUsers": [
+    {
+      "firstName": "Gaurav",
+      "lastName": "Verma",
+      "company": "Harvest",
+      "email": "gauravverma004@gmail.com",
+      "password": "12345",
+      "id": 1
+    }
+  ]
 }
