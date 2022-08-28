@@ -6,6 +6,7 @@ import { Compo } from './Compo'
 import data from './feature'
 import { useRef } from 'react'
 import { Starttrack } from '../../components/home/Starttrack'
+import { Start } from '../../components/integrations/start/Start'
 export const Features = () => {
     const timer=useRef()
     const report=useRef()
@@ -31,26 +32,27 @@ export const Features = () => {
     }
 
   return (
-    <Box  width={"90%"} margin="auto" bg="" >
+        <Box bgColor="#fff8f1" >
+    <Box  width={"90%"} margin="auto"  >
      <Text fontWeight={"400"} fontSize="50px" >Everything your team needs to keep ticking</Text>
      <Text fontWeight={"400"} fontSize="29px" >Intuitive time tracking and powerful insights that help your team thrive.</Text>
      <Box display={"flex"} mt="7%"  gap="5%" >
         <Box display={"flex"} border="1px solid red"  alignItems="center" borderRadius={"10px"} height="80px" width={"390px"} justifyContent="space-around"  >
             <img src="	https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-nav-time.svg" alt="" />
-            <Text fontSize={"x-large"} _hover={{color:"orange",cursor:"pointer"}} onClick={timermove} >Time tracking</Text>
-            <AiOutlineArrowDown size={"25px"}  color="orange" />
+            <Text fontSize={"x-large"} _hover={{color:"#fa5d00",cursor:"pointer"}} onClick={timermove} >Time tracking</Text>
+            <AiOutlineArrowDown size={"25px"}  color="#fa5d00" />
         </Box>
         <Box display={"flex"} border="1px solid red"  alignItems="center" borderRadius={"10px"} height="80px" width={"390px"} justifyContent="space-around" >
             <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-nav-report.svg" alt="" />
-            <Text fontSize={"x-large"} _hover={{color:"orange",cursor:"pointer"}} onClick={reportmove} >Report & analysis</Text>
-            <AiOutlineArrowDown size={"25px"}  color="orange"  />
+            <Text fontSize={"x-large"} _hover={{color:"#fa5d00",cursor:"pointer"}} onClick={reportmove} >Report & analysis</Text>
+            <AiOutlineArrowDown size={"25px"}  color="#fa5d00"  />
             
             
         </Box>
         <Box display={"flex"} border="1px solid red"  alignItems="center" borderRadius={"10px"} height="80px" width={"390px"} justifyContent="space-around" >
             <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-nav-invoice.svg" alt="" />
-            <Text fontSize={"x-large"} _hover={{color:"orange",cursor:"pointer"}} onClick={invoicemove} >Invoicing & payments</Text>
-            <AiOutlineArrowDown size={"25px"}  color="orange"  />
+            <Text fontSize={"x-large"} _hover={{color:"#fa5d00",cursor:"pointer"}} onClick={invoicemove} >Invoicing & payments</Text>
+            <AiOutlineArrowDown size={"25px"}  color="#fa5d00"  />
             
         </Box>
     </Box>
@@ -215,6 +217,7 @@ export const Features = () => {
      </Box>
      
      </Box>
+   
      <Box mt="100px" display={"flex"} alignItems="center" ml="10px"  >
         <Box >
             <img style={{maxWidth:"375px",borderTopLeftRadius:"20px",borderBottomRightRadius:"20px"}} src="https://www.getharvest.com/hs-fs/hubfs/site-images/features-quote-2.jpg?width=563&name=features-quote-2.jpg"  alt="" />
@@ -234,7 +237,8 @@ export const Features = () => {
     </Box>
      
    
-    <Box borderY={"1px solid red"} mt="10%"  >
+    <Box  mt="10%" borderTop={"1px solid red"}   >
+      
      <Box display={"flex"} alignItems="center" mt="10%" ref={invoice} >
         <Box >
             <Text align={"left"} color="#fb701e" fontSize="4xl">Invoicing & <br/> payments</Text>
@@ -288,11 +292,16 @@ export const Features = () => {
     
 
     
-<Starttrack/>
+
     
 
-   <hr />
+
      
+    </Box>
+   
+    <Box borderTop={"1px solid red"}>
+    <Start/>
+    </Box>
     </Box>
   )
 }
