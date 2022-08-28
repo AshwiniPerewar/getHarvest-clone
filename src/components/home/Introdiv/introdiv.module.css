@@ -1,4 +1,7 @@
-
+.box{
+    margin-left:3rem;
+     margin-top:4rem;
+}
 .finally_heading{
     font-size:48px;
     margin: auto;
@@ -15,4 +18,32 @@
        font-weight:400;
         margin-top:1.5rem;
         
+}
+
+.img2{
+    width:60%;
+    margin-top:1rem;
+
+}
+
+@media  (max-width: 850px){
+    .box{
+        margin: 0;
+        margin-top: 2rem;
+    }
+    .outerbox,.inputdiv{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .img2{
+        width:100%;
+    }
+    .trial{
+        text-align: center;
+    }
+    .finally_heading{
+        font-size: 36px;
+        line-height: 40px;
+    }
 }
