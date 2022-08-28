@@ -1,8 +1,5 @@
 import { AllRoutes } from './allRoutes/AllRoutes';
 import './App.css';
-import Team from './proctedPages/team/Team';
-
-
 
 
 
@@ -11,7 +8,12 @@ function App() {
     <div className="App">
     
       <AllRoutes/>
-      </div>
+
+   
+    </div>
+
+     
+
   );
 }
 

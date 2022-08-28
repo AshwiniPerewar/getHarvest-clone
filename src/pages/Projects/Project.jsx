@@ -1,4 +1,4 @@
-import { Box, Button, Checkbox, Input, InputGroup, InputLeftElement, Text } from '@chakra-ui/react'
+import { Box, Button, Checkbox, Input, InputGroup, InputLeftElement, Progress, Text } from '@chakra-ui/react'
 import React from 'react'
 import {AiOutlineSearch,AiOutlineDown} from "react-icons/ai"
 import {
@@ -22,13 +22,19 @@ import {
     TableCaption,
     TableContainer,
   } from '@chakra-ui/react'
+import { ProtectedNavbar } from '../../components/protectedComponents/protectedNavbar/ProtectedNavbar'
+
+
+
+
 export const Project = () => {
   return (
+    <Box><ProtectedNavbar/>
    <Box margin={"auto"}  >
-    <Box border="1px solid" height={"5em"} bg="#eeeeee">
+    <Box border="1px solid #c4c3d4" height={"5em"} bg="#eeeeee">
     <Box display={"flex"} justifyContent="space-between" mt="1em" paddingLeft={"30px"} paddingRight={"30px"} >
         <Box display={"flex"} gap="2" >
-            <Button colorScheme={"green"} >+ New Project</Button>
+            <Button color={"white"} bg={"#188433"} _hover={{bg:"#188433"}}  >+ New Project</Button>
             <Button color={"black"} bg="white" variant={"outline"}>Import</Button>
             <Button color={"black"} bg="white" variant={"outline"}>Export</Button>
         </Box>
@@ -118,7 +124,7 @@ export const Project = () => {
 
         </Td>
         <Td >
-            <Input size={"xm"} width="60%"/>
+        <Progress border={"1px solid"} value={0} />
         </Td>
         <Td>
         50.00 (100%)
@@ -203,6 +209,7 @@ export const Project = () => {
 </Box>
 
 
+   </Box>
    </Box>
   )
 }

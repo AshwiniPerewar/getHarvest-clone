@@ -5,7 +5,11 @@ import {AiOutlineArrowDown} from "react-icons/ai"
 import { Compo } from './Compo'
 import data from './feature'
 import { useRef } from 'react'
-import { Starttrack } from '../../components/home/Start-trackl/Starttrack'
+import { Start } from '../../components/integrations/start/Start'
+import { useNavigate } from 'react-router-dom'
+
+
+
 export const Features = () => {
     const timer=useRef()
     const report=useRef()
@@ -30,27 +34,33 @@ export const Features = () => {
        
     }
 
+    const navigate=useNavigate()
+    const signIn=()=>{
+        navigate("/signin")
+    }
+
   return (
-    <Box  width={"90%"} margin="auto" bg="" >
+        <Box bgColor="#fff8f1" >
+    <Box  width={"90%"} margin="auto"  >
      <Text fontWeight={"400"} fontSize="50px" >Everything your team needs to keep ticking</Text>
      <Text fontWeight={"400"} fontSize="29px" >Intuitive time tracking and powerful insights that help your team thrive.</Text>
      <Box display={"flex"} mt="7%"  gap="5%" >
-        <Box display={"flex"} border="1px solid red"  alignItems="center" borderRadius={"10px"} height="80px" width={"390px"} justifyContent="space-around"  >
+        <Box display={"flex"} border="1px solid red"  alignItems="center" borderRadius={"10px"} height="80px" width={"390px"} justifyContent="space-around" _hover={{bgColor:"rgba(250,93,0,5%)"}} >
             <img src="	https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-nav-time.svg" alt="" />
-            <Text fontSize={"x-large"} _hover={{color:"orange",cursor:"pointer"}} onClick={timermove} >Time tracking</Text>
-            <AiOutlineArrowDown size={"25px"}  color="orange" />
+            <Text fontSize={"x-large"} _hover={{color:"#fa5d00",cursor:"pointer"}} onClick={timermove} >Time tracking</Text>
+            <AiOutlineArrowDown size={"25px"}  color="#fa5d00" />
         </Box>
-        <Box display={"flex"} border="1px solid red"  alignItems="center" borderRadius={"10px"} height="80px" width={"390px"} justifyContent="space-around" >
+        <Box display={"flex"} border="1px solid red"  alignItems="center" borderRadius={"10px"} height="80px" width={"390px"} justifyContent="space-around" _hover={{bgColor:"rgba(250,93,0,5%)"}} >
             <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-nav-report.svg" alt="" />
-            <Text fontSize={"x-large"} _hover={{color:"orange",cursor:"pointer"}} onClick={reportmove} >Report & analysis</Text>
-            <AiOutlineArrowDown size={"25px"}  color="orange"  />
+            <Text fontSize={"x-large"} _hover={{color:"#fa5d00",cursor:"pointer"}} onClick={reportmove} >Report & analysis</Text>
+            <AiOutlineArrowDown size={"25px"}  color="#fa5d00"  />
             
             
         </Box>
-        <Box display={"flex"} border="1px solid red"  alignItems="center" borderRadius={"10px"} height="80px" width={"390px"} justifyContent="space-around" >
+        <Box display={"flex"} border="1px solid red"  alignItems="center" borderRadius={"10px"} height="80px" width={"390px"} justifyContent="space-around" _hover={{bgColor:"rgba(250,93,0,5%)"}} >
             <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-nav-invoice.svg" alt="" />
-            <Text fontSize={"x-large"} _hover={{color:"orange",cursor:"pointer"}} onClick={invoicemove} >Invoicing & payments</Text>
-            <AiOutlineArrowDown size={"25px"}  color="orange"  />
+            <Text fontSize={"x-large"} _hover={{color:"#fa5d00",cursor:"pointer"}} onClick={invoicemove} >Invoicing & payments</Text>
+            <AiOutlineArrowDown size={"25px"}  color="#fa5d00"  />
             
         </Box>
     </Box>
@@ -62,7 +72,7 @@ export const Features = () => {
         <Box >
             <Text align={"left"} color="#fb701e" fontSize="4xl">Time tracking</Text>
             <Box fontWeight={"500"} fontSize="22px" mt={"20px"} paddingRight="30px" >An intuitive, lightweight time tracking experience that’s easy to adopt and use every day.</Box>
-            <Button color={"white"} bg="#fa5d00" size="lg" borderRadius={"10px"} mt={"10%"}>Start your free trial</Button>
+            <Button color={"white"} bg="#fa5d00" size="lg" borderRadius={"10px"} mt={"10%"} _hover={{bgColor:"rgba(250,93,0,90%)",borderColor:"rgba(250,93,0,90%)"}} onClick={signIn}>Start your free trial</Button>
         </Box>
         <Box border={"1px solid black"}  >
             <img src="https://www.getharvest.com/hs-fs/hubfs/screenshot-features-timesheets.png?width=1181&name=screenshot-features-timesheets.png" alt="" />
@@ -132,7 +142,7 @@ export const Features = () => {
         <Box ml="15px">
             <Text align={"left"} color="#fb701e" fontSize="4xl">Reports & analysis</Text>
             <Box fontWeight={"500"} fontSize="22px" mt={"20px"} paddingRight="30px" >A wide selection of visual reports keep projects running smoothly and your team supported.</Box>
-            <Button color={"white"} bg="#fa5d00" size="lg" borderRadius={"10px"} mt={"10%"}>Start your free trial</Button>
+            <Button color={"white"} bg="#fa5d00" size="lg" borderRadius={"10px"} mt={"10%"} _hover={{bgColor:"rgba(250,93,0,90%)",borderColor:"rgba(250,93,0,90%)"}} onClick={signIn} >Start your free trial</Button>
         </Box>
         <Box border={"1px solid black"}  >
             <img src="https://www.getharvest.com/hs-fs/hubfs/screenshot-features-projects.png?width=1181&name=screenshot-features-projects.png" alt="" />
@@ -215,6 +225,7 @@ export const Features = () => {
      </Box>
      
      </Box>
+   
      <Box mt="100px" display={"flex"} alignItems="center" ml="10px"  >
         <Box >
             <img style={{maxWidth:"375px",borderTopLeftRadius:"20px",borderBottomRightRadius:"20px"}} src="https://www.getharvest.com/hs-fs/hubfs/site-images/features-quote-2.jpg?width=563&name=features-quote-2.jpg"  alt="" />
@@ -234,12 +245,13 @@ export const Features = () => {
     </Box>
      
    
-    <Box borderY={"1px solid red"} mt="10%"  >
+    <Box  mt="10%" borderTop={"1px solid red"}   >
+      
      <Box display={"flex"} alignItems="center" mt="10%" ref={invoice} >
         <Box >
             <Text align={"left"} color="#fb701e" fontSize="4xl">Invoicing & <br/> payments</Text>
             <Box fontWeight={"500"} fontSize="22px" mt={"20px"} paddingRight="30px" >Turn your team’s tracked time and expenses into invoices and collect payment quickly with integrated online payments.</Box>
-            <Button color={"white"} bg="#fa5d00" size="lg" borderRadius={"10px"} mt={"10%"} >Start your free trial</Button>
+            <Button color={"white"} bg="#fa5d00" size="lg" borderRadius={"10px"} mt={"10%"} _hover={{bgColor:"rgba(250,93,0,90%)",borderColor:"rgba(250,93,0,90%)"}}  onClick={signIn} >Start your free trial</Button>
         </Box>
         <Box border={"1px solid black"}  >
             <img src="https://www.getharvest.com/hs-fs/hubfs/screenshot-features-invoices-1.png?width=1181&name=screenshot-features-invoices-1.png" alt="" />
@@ -288,11 +300,16 @@ export const Features = () => {
     
 
     
-<Starttrack/>
+
     
 
-   <hr />
+
      
+    </Box>
+   
+    <Box borderTop={"1px solid red"}>
+    <Start/>
+    </Box>
     </Box>
   )
 }
