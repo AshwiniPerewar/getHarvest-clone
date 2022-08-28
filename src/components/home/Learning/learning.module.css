@@ -1,0 +1,53 @@
+.border
+{
+    border-top:1px solid #fa5d00;
+     width:91%;
+      margin:auto;
+       margin-top:2rem;
+}
+
+
+.learning_heading{
+    font-family:MuotoWeb - 400;
+     color:#1d1e1c;
+      font-weight:400;
+      margin-top: 1rem;
+}
+
+.learning_box_heading{
+    margin-top:0.5rem;
+     font-size:26px;
+      font-family:MuotoWeb - 400;
+       color:#1d1e1c;
+        font-weight:400;
+}
+
+.learning_box_desc{
+     font-size:16px;
+      font-family:MuotoWeb - 400 ;
+      color:#1d1e1c;
+       font-weight:400;
+}
+
+
+
+.learning_box{
+    border-top:1px solid #fa5d00;
+     width:103%;
+      padding:1rem;
+       gap: 1rem;
+}
+.learning_box_img{
+    width:4rem;
+    height: 4rem;
+    margin-top:1rem;
+}
+
+
+
+.bgimg{
+    background-image: url(//19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/auras/aura-bottom-blur.jpg);
+    background-repeat: no-repeat;
+    background-size: 687px 410px;
+    background-position: 0 100%;
+}
