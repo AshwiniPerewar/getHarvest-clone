@@ -6,7 +6,7 @@ export const Helpteam = () => {
     return (
         <div className={styles.helpcontainer}>
             <div className={styles.helpText}>
-                <h4> Help your time spend time wisely</h4>
+                <h1> Help your time spend time wisely</h1>
                 <p>
                 Harvest time tracking makes it easy to capture time, gain insights
                 from past projects, and get paid for your work.
