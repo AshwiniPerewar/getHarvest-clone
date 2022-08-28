@@ -18,11 +18,15 @@ import { Link } from "react-router-dom";
 import logo_Image2 from "../../../assets/harvest_logo.png";
 import styles from "../afterSignUp2/aftersignup2.module.css";
 import { IndustryData } from "./IndustryData";
+import {useNavigate} from "react-router-dom";
 
 const AfterSignUp7 = ({data}) => {
 
+  const navigate=  useNavigate();
+
   const goToNext = async () => {
     await axios.post("http://localhost:8080/userData",data);
+    navigate("/time");
   }
  
   return (

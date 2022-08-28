@@ -579,11 +579,10 @@
       "linkName": "Contact us",
       "link": "https://www.getharvest.com/contact"
     }
-
   ],
   "userData": {
     "team": "1",
-    "hours": 15
+    "hours": 40
   },
   "timeDatas": [
     {
@@ -625,13 +624,22 @@
   ],
   "expenses": [
     {
-      "id":1,
-      "date":"27/08/2022",
-      "project":"Example client",
-      "category":"meal",
-      "notes":"abcd",
-      "amount":50
+      "id": 1,
+      "date": "27/08/2022",
+      "project": "Example client",
+      "category": "meal",
+      "notes": "abcd",
+      "amount": 50
+    }
+  ],
+  "registeredUsers": [
+    {
+      "firstName": "Gaurav",
+      "lastName": "Verma",
+      "company": "Harvest",
+      "email": "gauravverma004@gmail.com",
+      "password": "12345",
+      "id": 1
     }
   ]
-
 }
