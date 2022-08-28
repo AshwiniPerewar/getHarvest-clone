@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from './helpteam.module.css';
+import {useNavigate} from "react-router-dom"
 
 export const Helpteam = () => {
     return (
@@ -13,7 +14,7 @@ export const Helpteam = () => {
                 </p>
             </div>
             <div className={styles.btnContainer}>
-                <Link to="#">
+                <Link to="/signup">
                 <button className={styles.btnTry}>Try Harvest Free</button>
                 </Link>
                 <p>Free 30-day trial. No credit card required.</p>

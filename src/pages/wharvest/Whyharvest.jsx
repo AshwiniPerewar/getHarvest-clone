@@ -9,7 +9,7 @@ import { Logos } from '../../components/whyharvest/Logos'
 
 export const Whyharvest = () => {
   return (
-    <div>
+    <div style={{backgroundColor:"#fef8f1"}}>
         <Helpteam />
         <Empower />
         <Logos />

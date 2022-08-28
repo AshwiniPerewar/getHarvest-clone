@@ -4,8 +4,10 @@ import { HStack } from '@chakra-ui/react';
 import { VStack } from '@chakra-ui/react';
 import {Link as LinkasRouterLink } from 'react-router-dom';
 import { Button } from '@chakra-ui/react';
+import {useNavigate} from "react-router-dom"
 
 export const TimeTracking = () => {
+  const navigate = useNavigate()
   return (
     <Box padding={"60px 0px 60px 0px"} border={"1px solid white"} >
     <HStack textAlign={"left"} width={"90%"} margin="auto">
@@ -32,7 +34,7 @@ export const TimeTracking = () => {
                 bg={"black"}
                 colorScheme={"red"}
                 color="white"
-                
+                onClick={() => navigate("/signup")}
 
               >
                 Try Harvest free
