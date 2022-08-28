@@ -35,9 +35,9 @@ const [data,setData]=useState([])
 useEffect(()=>{
   axios.get("http://localhost:8080/expenses")
   .then((res)=>setData(res.data))
-})
+},[])
 
-console.log(data)
+
 
 
 
