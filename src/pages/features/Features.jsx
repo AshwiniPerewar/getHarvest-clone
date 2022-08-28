@@ -44,7 +44,7 @@ export const Features = () => {
     <Box  width={"90%"} margin="auto"  >
      <Text fontWeight={"400"} fontSize="50px" >Everything your team needs to keep ticking</Text>
      <Text fontWeight={"400"} fontSize="29px" >Intuitive time tracking and powerful insights that help your team thrive.</Text>
-     <Box display={"flex"} mt="7%"  gap="5%" >
+     <Box className={styles.btn} display={"flex"}  mt="7%"  gap="5%" >
         <Box display={"flex"} border="1px solid red"  alignItems="center" borderRadius={"10px"} height="80px" width={"390px"} justifyContent="space-around" _hover={{bgColor:"rgba(250,93,0,5%)"}} >
             <img src="	https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-nav-time.svg" alt="" />
             <Text fontSize={"x-large"} _hover={{color:"#fa5d00",cursor:"pointer"}} onClick={timermove} >Time tracking</Text>
@@ -79,10 +79,10 @@ export const Features = () => {
         </Box>
 
      </Box>
-     <Box display={"flex"} width="95%" margin={"auto"} justifyContent="space-between"  fontFamily={"MuotoWeb,sans-serif"}  mt="5%" pb="9%">
+     <Box  display={"flex"} width="95%" margin={"auto"} justifyContent="space-between"  fontFamily={"MuotoWeb,sans-serif"}  mt="5%" pb="9%">
         <Box width={"32%"}>
             <Box>
-                <Box display={"flex"} alignItems="center">
+                <Box display={"flex"} alignItems="center" >
                     <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-stopwatch.svg" alt="" />
                     <Text fontSize={"26px"} >Track time from browser, desktop, and mobile</Text>
                 </Box>
