@@ -19,7 +19,7 @@ const Arrowdiv = () => {
     <Text className={styles.weekheading}>This week: 22 – 28 Aug 2022</Text>
     </Flex>
     <Select placeholder="Everyone" width="110px" height="2rem" fontSize="15px" border="1px solid black" borderRadius="10px" _hover={{border:"1px solid black"}}>
-    <option className={styles.option}>Everyone</option>
+    <option className={styles.option}>My Pins</option>
     </Select>
     </Flex>
     <Box className={styles.border}></Box>

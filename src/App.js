@@ -1,5 +1,6 @@
 import { AllRoutes } from './allRoutes/AllRoutes';
 import './App.css';
+import Team from './proctedPages/team/Team';
 
 
 
