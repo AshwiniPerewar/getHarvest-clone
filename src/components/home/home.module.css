@@ -31,13 +31,6 @@
       margin-top:1rem;
 }
 
-.tryharvest_button{
-    background-color:#fa5d00;
-     color:white;
-    border-radius:15px;
-    margin-top:2rem;
-    text-align: center;
-}
 .started_desc{
     font-size:16px;
      font-weight:400;
@@ -109,15 +102,3 @@
     color: #fa5d00;
 }
 
-.intigrationimg{
-    background-image: url(../../assets/pro-option.png);
-    background-repeat: no-repeat;
-    background-position: 80% 0%;
-}
-
-.bgimg{
-    background-image: url(//19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/auras/aura-bottom-blur.jpg);
-    background-repeat: no-repeat;
-    background-size: 687px 410px;
-    background-position: 0 100%;
-}

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styles from "./pricing.module.css";
 import PriceBox from "./smaller_components/PriceBox";
 import proPng from "../../assets/pro-option.png";
-import CompanyLogo from "../../components/home/CompanyLogo";
+import CompanyLogo from "../../components/home/CompanyLogo/CompanyLogo";
 import FeaturesGrid from "./smaller_components/FeaturesGrid";
 import FlexBoxes from "./smaller_components/FlexBoxes";
 import FAQ from "./smaller_components/FAQ";
