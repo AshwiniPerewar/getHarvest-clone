@@ -1,6 +1,6 @@
 import { AllRoutes } from './allRoutes/AllRoutes';
 import './App.css';
-import { Project } from './pages/Projects/Project';
+
 
 
 
@@ -15,7 +15,7 @@ function App() {
       <AllRoutes/>
 
       
-     
+   
       
   
 
