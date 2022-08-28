@@ -5,8 +5,6 @@ import {AiOutlineArrowDown} from "react-icons/ai"
 import { Compo } from './Compo'
 import data from './feature'
 import { useRef } from 'react'
-
-
 import { Start } from '../../components/integrations/start/Start'
 
 
