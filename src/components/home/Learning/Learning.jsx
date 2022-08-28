@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Image, Text, Flex} from '@chakra-ui/react'
-import styles from './home.module.css'
+import styles from './learning.module.css'
 import {ArrowForwardIcon } from '@chakra-ui/icons'
 
 const Learning = () => {
@@ -18,15 +18,15 @@ const Learning = () => {
     <Flex width="88%" margin="auto" marginTop="6rem" gap="10rem" justifyContent="space-between" >
       <Box width="30rem"marginTop="6rem">
       <Text fontSize="20px" fontWeight="700" color="#fa5d00" fontFamily="MuotoWeb - 700">LEARNING RESOURCES</Text>
-       <Text fontSize="39px" className={styles.feature_heading} lineHeight="48px">Supporting your team along the way</Text>
+       <Text fontSize="39px" className={styles.learning_heading} lineHeight="48px">Supporting your team along the way</Text>
        </Box>
       <Box width="40rem">
         {LearnObj.map((el)=>(
           <Flex className={styles.learning_box} >
            <Image  className={styles.learning_box_img} src={el.img} />
             <Flex direction="column">
-                <Text className={styles.feature_box_heading}>{el.heading}</Text>
-                   <Text className={styles.feature_box_desc}>{el.desc}</Text>
+                <Text className={styles.learning_box_heading}>{el.heading}</Text>
+                   <Text className={styles.learning_box_desc}>{el.desc}</Text>
                   </Flex>
         <ArrowForwardIcon w={8} h={8} marginTop="2rem" color="#fa5d00"/>
         </Flex>

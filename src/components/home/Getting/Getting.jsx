@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Image, Text, Button, Flex,} from '@chakra-ui/react'
-import styles from './home.module.css'
+import styles from './getting.module.css'
 
 export const Getting = () => {
   const GettingObj=[

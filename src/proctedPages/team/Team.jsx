@@ -1,11 +1,11 @@
 import { Box, Container } from '@chakra-ui/react';
 import React from 'react'
+import Arrowdiv from '../../components/protectedComponents/team/Arrowdiv/Arrowdiv';
+import Employee from '../../components/protectedComponents/team/employee/Employee';
+import EmployeeList from '../../components/protectedComponents/team/Employeelist/EmployeeList';
+import Timediv from '../../components/protectedComponents/team/Timediv/Timediv';
 import { ProtectedNavbar } from '../../components/protectedNavbar/ProtectedNavbar';
-import Arrowdiv from './Arrowdiv/Arrowdiv';
-import Employee from './employee/Employee';
-import EmployeeList from './Employeelist/EmployeeList';
-import Invite from './Invite/Invite';
-import Timediv from './Timediv/Timediv';
+
 const Team = () => {
   return (
     <Box width="100%">

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Box, Image, Text, Button, Container, Flex, Grid, Input } from '@chakra-ui/react'
-import styles from './home.module.css'
+import { Box, Image, Text, Button, Flex,  Input } from '@chakra-ui/react'
+import styles from './introdiv.module.css'
 
 export const Introdiv = () => {
   return (
