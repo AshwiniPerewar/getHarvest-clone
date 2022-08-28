@@ -15,7 +15,7 @@ export const Getting = () => {
   return (
     <Box>
         <Box className={styles.border} width="102%" marginLeft="-1%"></Box>
-         <Box marginTop="2rem" marginLeft="3rem">
+         <Box  className={styles.box}>
         <Text fontSize="42px"  color="#1d1e1c"  fontWeight="300" lineHeight="50px" fontFamily="MuotoWeb, sans-serif">Getting Started</Text>
       <Text fontSize="26px"  fontWeight="300"  color="#1d1e1c" fontFamily="MuotoWeb-300" marginTop="1rem">Time tracking so easy, your team will actually use it.</Text>
       </Box>

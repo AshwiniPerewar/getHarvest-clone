@@ -16,13 +16,13 @@ export const Features = () => {
   return (
     <Box>
         <Box className={styles.border}></Box>
-      <Box width="90%" margin="auto" textAlign="start" marginTop="4rem">
+      <Box  className={styles.outerbox}>
         <Box>
        <Text fontSize="20px" fontWeight="700" color="#fa5d00" fontFamily="MuotoWeb - 700">FEATURES</Text>
-       <Text fontSize="39px" className={styles.feature_heading} >Everything you need to keep your team ticking</Text>
-       <Text fontSize="26px"  className={styles.feature_heading}  marginTop="1rem">Time tracking software that helps you keep time and get insights.</Text>
-       <Flex  marginTop="3rem"  width="100%">
-       <Flex direction="column" width="60rem"  gap="1.5rem"   textAlign="start" color="#1d1e1c" fontFamily="MuotoTrial">
+       <Text  className={styles.feature_heading} >Everything you need to keep your team ticking</Text>
+       <Text  className={styles.feature_heading2}  marginTop="1rem">Time tracking software that helps you keep time and get insights.</Text>
+       <Flex  marginTop="3rem"  width="100%" className={styles.flexbox}>
+       <Flex direction="column" className={styles.featurediv}  gap="1.5rem"   textAlign="start" color="#1d1e1c" fontFamily="MuotoTrial">
         {featureObj.map((el)=>(
           <Flex className={styles.feature_box}>
           <Image  className={styles.feature_box_img} src={el.img}/>
@@ -32,9 +32,9 @@ export const Features = () => {
         </Flex>
         </Flex>
         ))}
-        <Button bgColor="#1d1e1c" _hover={{cursor:"pointer",bgColor:"#0e0d0dd9"}} color="white"  borderRadius="15px" fontSize="20px"  width="14rem" marginTop="2rem">Discover all features</Button>
+        <Button bgColor="#1d1e1c" _hover={{cursor:"pointer",bgColor:"#0e0d0dd9"}} color="white"  borderRadius="15px" fontSize="20px" marginTop="2rem" className={styles.button} >Discover all features</Button>
        </Flex>
-       <Image  height="27rem" marginLeft="-10%" width="40rem" src="https://www.getharvest.com/hs-fs/hubfs/screenshot-home-timesheets.png?width=1700&name=screenshot-home-timesheets.png"  border="1px solid black"/>
+       <Image  className={styles.img} src="https://www.getharvest.com/hs-fs/hubfs/screenshot-home-timesheets.png?width=1700&name=screenshot-home-timesheets.png"  border="1px solid black"/>
        </Flex>
        </Box>
         </Box>

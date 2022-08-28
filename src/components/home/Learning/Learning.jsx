@@ -15,13 +15,14 @@ const Learning = () => {
   return (
     <Box className={styles.bgimg}>
          <Box className={styles.border}></Box>
-    <Flex width="88%" margin="auto" marginTop="6rem" gap="10rem" justifyContent="space-between" >
-      <Box width="30rem"marginTop="6rem">
+    <Flex  className={styles.outerflex}>
+      <Box className={styles.headingdiv}>
       <Text fontSize="20px" fontWeight="700" color="#fa5d00" fontFamily="MuotoWeb - 700">LEARNING RESOURCES</Text>
-       <Text fontSize="39px" className={styles.learning_heading} lineHeight="48px">Supporting your team along the way</Text>
+       <Text className={styles.learning_heading} lineHeight="48px">Supporting your team along the way</Text>
        </Box>
       <Box width="40rem">
         {LearnObj.map((el)=>(
+          <Box className={styles.learningdiv}>
           <Flex className={styles.learning_box} >
            <Image  className={styles.learning_box_img} src={el.img} />
             <Flex direction="column">
@@ -30,6 +31,7 @@ const Learning = () => {
                   </Flex>
         <ArrowForwardIcon w={8} h={8} marginTop="2rem" color="#fa5d00"/>
         </Flex>
+        </Box>
         ))}
      </Box>
     </Flex>

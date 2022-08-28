@@ -20,6 +20,7 @@ import AfterSignUp6 from "../pages/AfterSignup/afterSignUp6/AfterSignUp6";
 import AfterSignUp7 from "../pages/AfterSignup/afterSignUp7/AfterSignUp7";
 import { Time } from "../proctedPages/time/Time";
 import { Expenses } from "../proctedPages/expenses/Expenses";
+import Team from "../proctedPages/team/Team";
 
 let initialState = {
   team:"",
@@ -60,6 +61,7 @@ export const AllRoutes = () => {
           <Route path="/welcome/marketing" element={<AfterSignUp7 data={data}/>} />
           <Route path="/time" element={<Time />} />
           <Route path="/expenses" element={<Expenses />} />
+         <Route path="/team" element={<Team/>}/>
         </Route>
         <Route element={<WithNavFoot />}>
           <Route path="/" element={<Home />} />
