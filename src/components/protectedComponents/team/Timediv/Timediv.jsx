@@ -1,7 +1,14 @@
 import { Box, Flex ,Text} from '@chakra-ui/react'
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import styles from "./timediv.module.css"
+import axios from "axios";
 const Timediv = () => {
+  const[data,setData]=useState([]);
+  useEffect(()=>
+  {
+    axios.get('http://localhost:8080/userData')
+    .then((r)=>{console.log(r.data);setData(r.data)});
+  },[])
   return (
     <Box marginTop="1rem">
         <Flex justifyContent="space-between">
@@ -11,7 +18,7 @@ const Timediv = () => {
             </Box>
             <Box>
                 <Text className={styles.heading}>Team capacity</Text>
-                <Text className={styles.info}>35.00</Text>
+                <Text className={styles.info}>{data.team}</Text>
             </Box>
             <Flex direction="column" marginTop="6px" gap="3px">
               <Flex gap="8px">

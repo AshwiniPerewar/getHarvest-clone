@@ -632,7 +632,7 @@
       "amount": 50
     }
   ],
-  "registeredUsers": [
+  "registeredUsers": 
     {
       "firstName": "Gaurav",
       "lastName": "Verma",
@@ -641,5 +641,5 @@
       "password": "12345",
       "id": 1
     }
-  ]
+  
 }
