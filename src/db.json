@@ -632,14 +632,7 @@
       "amount": 50
     }
   ],
-  "registeredUsers": [
-    {
-      "firstName": "Gaurav",
-      "lastName": "Verma",
-      "company": "Harvest",
-      "email": "gauravverma004@gmail.com",
-      "password": "12345",
-      "id": 1
-    }
-  ]
+  "registeredUsers": {
+    
+  }
 }

@@ -7,6 +7,10 @@
     line-height: 16px;
    
 }
+.ownerinfo{
+    font-weight: 700;
+    margin-left: 5px;
+}
 
 .box{
     background-color: #efefef ;

@@ -4,12 +4,13 @@ import { Expenses } from './proctedPages/expenses/Expenses';
 
 
 
+
 function App() {
   return (
     <div className="App">
     
-      {/* <AllRoutes/> */}
-      <Expenses />
+      <AllRoutes/> 
+
    
     </div>
 

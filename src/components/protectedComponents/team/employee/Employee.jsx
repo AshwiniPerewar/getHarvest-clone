@@ -3,6 +3,7 @@ import React from 'react'
 import {TimeIcon} from "@chakra-ui/icons";
 import styles from "./employee.module.css"
 const Employee = () => {
+   
   return (
    <Box className={styles.box}>
     <Flex justify="space-between" margin="8px 6rem 0px 10px" >
