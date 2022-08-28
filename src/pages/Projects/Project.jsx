@@ -26,6 +26,7 @@ import { ProtectedNavbar } from '../../components/protectedComponents/protectedN
 
 
 
+
 export const Project = () => {
   return (
     <Box><ProtectedNavbar/>
