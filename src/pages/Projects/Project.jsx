@@ -22,7 +22,7 @@ import {
     TableCaption,
     TableContainer,
   } from '@chakra-ui/react'
-import { ProtectedNavbar } from '../../components/protectedNavbar/ProtectedNavbar'
+import { ProtectedNavbar } from '../../components/protectedComponents/protectedNavbar/ProtectedNavbar'
 
 
 

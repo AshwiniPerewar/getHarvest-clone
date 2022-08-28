@@ -6,7 +6,6 @@ import { Compo } from './Compo'
 import data from './feature'
 import { useRef } from 'react'
 
-import { Starttrack } from '../../components/home/Starttrack'
 import { Start } from '../../components/integrations/start/Start'
 
 
