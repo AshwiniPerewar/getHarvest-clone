@@ -8,24 +8,11 @@
   width: 128px;
   height: 26px;
 }
-.googleButton {
-  padding: 0 16px;
-  width: 100%;
-  background-color: white;
-  font-weight: 500;
-  border: 1px solid rgba(29, 30, 28, 0.3);
-  position: relative;
-  display: flex;
-  justify-content: left;
-  letter-spacing: 0.6px;
-  border-radius: 10px;
-}
-.googleButton:hover {
-  border: 1px solid gray;
-}
+
 .googleIcon {
   font-size: 27px;
 }
+
 .box {
   background: #fff8f1;
   border: 1px solid #ffa26c;
@@ -34,27 +21,4 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-.inputSignIn {
-  background-color: #fff;
-  border: 1px solid rgba(29, 30, 28, 0.3);
-  border-radius: 4px;
-  color: #1d1e1c;
-  padding: 0 8px;
-  border-radius: 4px;
-  color: #1d1e1c;
-  font-weight: 500;
-}
-.buttonSignIn {
-  background-clip: border-box;
-  background-color: #188433;
-  border-color: none;
-  color: #fff;
-  font-weight: 500;
-  height: 40px;
-  border-radius: 10px;
-  font-size: 17px;
-}
-.buttonSignIn:hover {
-  background-color: rgb(3, 122, 3);
 }

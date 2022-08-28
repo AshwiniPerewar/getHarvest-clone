@@ -26,7 +26,7 @@ const Review = () => {
   return (
     <div className={styles.reviewDiv}>
       <div className={styles.review}>
-        <Flex alignItems="center" gap="20px">
+        <Flex alignItems="center" gap="20px" className={styles.smallerSize}>
           <Box
             backgroundColor="white"
             borderRadius="50%"
