@@ -6,6 +6,7 @@ import { Compo } from './Compo'
 import data from './feature'
 import { useRef } from 'react'
 import { Start } from '../../components/integrations/start/Start'
+import { useNavigate } from 'react-router-dom'
 
 
 
@@ -31,6 +32,11 @@ export const Features = () => {
             behavior:"smooth"
         })
        
+    }
+
+    const navigate=useNavigate()
+    const signIn=()=>{
+        navigate("/signin")
     }
 
   return (
@@ -66,7 +72,7 @@ export const Features = () => {
         <Box >
             <Text align={"left"} color="#fb701e" fontSize="4xl">Time tracking</Text>
             <Box fontWeight={"500"} fontSize="22px" mt={"20px"} paddingRight="30px" >An intuitive, lightweight time tracking experience that’s easy to adopt and use every day.</Box>
-            <Button color={"white"} bg="#fa5d00" size="lg" borderRadius={"10px"} mt={"10%"} _hover={{bgColor:"rgba(250,93,0,90%)",borderColor:"rgba(250,93,0,90%)"}}>Start your free trial</Button>
+            <Button color={"white"} bg="#fa5d00" size="lg" borderRadius={"10px"} mt={"10%"} _hover={{bgColor:"rgba(250,93,0,90%)",borderColor:"rgba(250,93,0,90%)"}} onClick={signIn}>Start your free trial</Button>
         </Box>
         <Box border={"1px solid black"}  >
             <img src="https://www.getharvest.com/hs-fs/hubfs/screenshot-features-timesheets.png?width=1181&name=screenshot-features-timesheets.png" alt="" />
@@ -136,7 +142,7 @@ export const Features = () => {
         <Box ml="15px">
             <Text align={"left"} color="#fb701e" fontSize="4xl">Reports & analysis</Text>
             <Box fontWeight={"500"} fontSize="22px" mt={"20px"} paddingRight="30px" >A wide selection of visual reports keep projects running smoothly and your team supported.</Box>
-            <Button color={"white"} bg="#fa5d00" size="lg" borderRadius={"10px"} mt={"10%"} _hover={{bgColor:"rgba(250,93,0,90%)",borderColor:"rgba(250,93,0,90%)"}}>Start your free trial</Button>
+            <Button color={"white"} bg="#fa5d00" size="lg" borderRadius={"10px"} mt={"10%"} _hover={{bgColor:"rgba(250,93,0,90%)",borderColor:"rgba(250,93,0,90%)"}} onClick={signIn} >Start your free trial</Button>
         </Box>
         <Box border={"1px solid black"}  >
             <img src="https://www.getharvest.com/hs-fs/hubfs/screenshot-features-projects.png?width=1181&name=screenshot-features-projects.png" alt="" />
@@ -245,7 +251,7 @@ export const Features = () => {
         <Box >
             <Text align={"left"} color="#fb701e" fontSize="4xl">Invoicing & <br/> payments</Text>
             <Box fontWeight={"500"} fontSize="22px" mt={"20px"} paddingRight="30px" >Turn your team’s tracked time and expenses into invoices and collect payment quickly with integrated online payments.</Box>
-            <Button color={"white"} bg="#fa5d00" size="lg" borderRadius={"10px"} mt={"10%"} _hover={{bgColor:"rgba(250,93,0,90%)",borderColor:"rgba(250,93,0,90%)"}} >Start your free trial</Button>
+            <Button color={"white"} bg="#fa5d00" size="lg" borderRadius={"10px"} mt={"10%"} _hover={{bgColor:"rgba(250,93,0,90%)",borderColor:"rgba(250,93,0,90%)"}}  onClick={signIn} >Start your free trial</Button>
         </Box>
         <Box border={"1px solid black"}  >
             <img src="https://www.getharvest.com/hs-fs/hubfs/screenshot-features-invoices-1.png?width=1181&name=screenshot-features-invoices-1.png" alt="" />
