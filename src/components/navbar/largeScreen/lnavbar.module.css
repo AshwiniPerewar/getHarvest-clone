@@ -6,7 +6,19 @@
     background-color: #fef8f1; 
     height: 90px;  
     padding: 4vh 11vw;
-    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 0.01vw;
+    font-size: 1.13vw;
+    color: black;
+}
+.lNavContainerW{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; 
+    height: 90px;  
+    padding: 4vh 11vw;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     font-family: 'Nunito Sans', sans-serif;
     letter-spacing: 0.01vw;
     font-size: 1.13vw;
@@ -50,5 +62,8 @@
 @media only screen and (max-width: 1000px){
     .lNavContainer{
         display: none;
-    }   
+    }  
+    .lNavContainerW{
+        display: none;
+    } 
 }

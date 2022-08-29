@@ -64,7 +64,7 @@ export const EditExpense = ({data}) => {
      <Input bgColor='#fff' type='file' placeholder='Attach receipt' />
      <Checkbox defaultChecked>This expense is billable</Checkbox>
      <Flex gap='5'>
-        <Button w='20%' variant='green' bgColor='green' color='#fff' fontSize='30' p='18' borderRadius="5"  onClick={handleEdit}>Update Expense</Button>
+        <Button w='60%' variant='green' bgColor='green' color='#fff' fontSize='20' p='18' borderRadius="5"  onClick={handleEdit}>Update Expense</Button>
           <Button w='20%' variant='outline'  fontSize='20' p='20px' onClick=''>Cancel</Button>
      </Flex>
     </Flex>

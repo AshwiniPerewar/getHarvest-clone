@@ -30,6 +30,29 @@ export const timeReducer = (state= initialData, {type, payload}) => {
                 timeData: payload
             };
         }   
+
+        case types.POST_TIME_LOADING:{
+            return {
+                ...state,
+                loading: false,
+                error: false                
+            };
+        } 
+        case types.POST_TIME_ERROR:{
+            return {
+                ...state,
+                loading: false,
+                error: false                
+            };
+        } 
+        case types.POST_TIME_SUCCESS:{
+            return {
+                ...state,
+                loading: false,
+                error: false, 
+                timeData: [...timeData, payload]
+            };
+        } 
             
         default: {
             return state;

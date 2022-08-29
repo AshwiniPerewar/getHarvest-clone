@@ -1,25 +1,31 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getTimeAPI } from "../../../../store/timeReducer/time.action";
 import { PaginDate } from "../paginDate/PaginDate";
 import { TrackTime } from "../trackTime/TrackTime";
 import styles from "./dailyTime.module.css";
 
 export const DailyTime = () => {
+  const dispatch = useDispatch();
+  const {loading, error, timeData} = useSelector((state)=> state.time)
   const [dateData, setDateData] = useState({});  
   const [edit, setedit] = useState(false);
   const timerId = useRef(null);
   const [timer, setTimer] = useState(0);
 
   // console.log(dateData, edit);
+  console.log(timeData);
 
   const start = () => {
     timerId= setInterval(() => {
         setTimer((timer)=> timer - 1);
     }, 1000);
   }
+  const stop = () => {}  
 
-  const stop = () => {
-
-  }
+  useEffect(()=> {
+    dispatch(getTimeAPI());
+  }, [dispatch])
  
   return (
     <div className={styles.dailyContainer}>
@@ -66,21 +72,20 @@ export const DailyTime = () => {
       </div>
 
       <div className={styles.outputContainer}>
-
-        <div className={styles.outputDiv}>
+        {timeData.length !== 0 && timeData.map((el)=> (
+          <div key={el.id} className={styles.outputDiv}>
           <div>
-            <h1>Example Project</h1>
-            <p>Design</p>
+            <h1>{el.client}</h1>
+            <p>{el.design}</p>
           </div>
           <div className={styles.outputDiv2}>
-            <h1>0:41</h1>
+            <h1><span>{timer}</span>: <span>00</span></h1>
             <div><button className={styles.outputbutton1}>Stop</button></div>
-            {/* <div><button onClick={()=> setedit(!edit)} className={styles.outputbutton2}>Edit</button></div> */}
+            <div><button onClick={()=> setedit(!edit)} className={styles.outputbutton2}>Edit</button></div>
           </div>
         </div>
-
+        ))}      
       </div>
-    
     </div>
   );
 };

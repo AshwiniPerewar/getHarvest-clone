@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 
 import harvest_logo from '../../../assets/harvest_logo.png';
 import styles from './lnavbar.module.css';
 
 const LNavbar = () => {
-    const navigate = useNavigate();
-      
+  const navigate = useNavigate();
+  const [isWhite, setIsWhite] = useState(false);
+  const changeColor = () => {
+    if(window.scrollY>=50){
+      setIsWhite(true);
+    }else{
+      setIsWhite(false);
+    }
+  }
+  window.addEventListener('scroll', changeColor);
+    
   return (
-    <div className={styles.lNavContainer}>
+    <div className={isWhite? styles.lNavContainerW : styles.lNavContainer}>
 
       <div className={styles.linkDiv}>
         <div className={styles.imgDiv}><NavLink to='/'><img className={styles.lnimage} src={harvest_logo} alt="harvest logo" /></NavLink></div>

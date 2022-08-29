@@ -34,7 +34,7 @@ export const TrackTime = ({dateData}) => {
   
   const onhandleSubmit = (e) => {
     e.preventDefault();
-    console.log({...data, ...dateData});
+    // console.log({...data, ...dateData});
     dispatch(postTimeAPI({...data, ...dateData}));
     onClose();
   };

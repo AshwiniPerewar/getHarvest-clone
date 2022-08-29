@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './proLargeNavbar.module.css';
+import axios from 'axios';
 
 export const ProLargeNavbar = () => {
+  const[data,setData]=useState([]);
+  const[user,setUser]=useState({});
+
+  useEffect(()=>
+  {
+    axios.get('http://localhost:8080/registeredUsers')
+    .then((r)=>setUser(r.data));
+  },[])
+
   return (
     <div className={styles.proLContainer}>
 
@@ -21,7 +31,7 @@ export const ProLargeNavbar = () => {
             <button>Setting</button>
             <button>
               <img src='https://tinyurl.com/52n2b37y' alt='userImage'/>
-              <p>roushan</p>
+              <p>{user.firstName}</p>
             </button>            
         </div>      
     </div>

@@ -581,8 +581,8 @@
     }
   ],
   "userData": {
-    "team": "1",
-    "hours": 40
+    "team": "2",
+    "hours": 35
   },
   "timeDatas": [
     {
@@ -608,31 +608,23 @@
       "year": 2022,
       "fullUserDate": "2022-08-27T17:10:53.829Z",
       "id": 2
-    },
-    {
-      "client": "shushant",
-      "design": "Marketing",
-      "optionaldata": "abcdef",
-      "stoptime": "454",
-      "day": "Saturday",
-      "date": 27,
-      "month": "August",
-      "year": 2022,
-      "fullUserDate": "2022-08-27T17:10:53.829Z",
-      "id": 3
     }
   ],
   "expenses": [
     {
-      "id": 1,
-      "date": "27/08/2022",
-      "project": "Example client",
-      "category": "meal",
-      "notes": "abcd",
-      "amount": 50
+      "date": "",
+      "project": "webDevlopment",
+      "category": "JavaScript",
+      "notes": "ossum Project",
+      "amount": "50",
+      "id": 1
     }
   ],
   "registeredUsers": {
-    
+    "firstName": "",
+    "lastName": "",
+    "company": "",
+    "email": "",
+    "password": ""
   }
 }
