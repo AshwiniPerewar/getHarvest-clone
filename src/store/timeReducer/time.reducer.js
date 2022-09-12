@@ -50,7 +50,7 @@ export const timeReducer = (state= initialData, {type, payload}) => {
                 ...state,
                 loading: false,
                 error: false, 
-                timeData: [...timeData, payload]
+                timeData: [...initialData.timeData, payload]
             };
         } 
             

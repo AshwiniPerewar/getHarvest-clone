@@ -3,9 +3,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fef8f1; 
+    background-color: hsl(32, 87%, 97%); 
     height: 90px;  
-    padding: 4vh 11vw;
+    padding: 4vh 5.5vw;
     font-family: 'Nunito Sans', sans-serif;
     letter-spacing: 0.01vw;
     font-size: 1.13vw;
@@ -17,7 +17,7 @@
     align-items: center;
     background-color: #fff; 
     height: 90px;  
-    padding: 4vh 11vw;
+    padding: 4vh 5.5vw;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     font-family: 'Nunito Sans', sans-serif;
     letter-spacing: 0.01vw;

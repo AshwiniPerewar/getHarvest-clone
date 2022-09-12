@@ -70,7 +70,7 @@ color: #fa5d00;
 cursor: pointer;
 }
 
-@media  (max-width: 850px){
+@media   (max-width: 850px){
     .border{
         width: 100%;
     }
@@ -79,6 +79,9 @@ cursor: pointer;
         flex-direction: column;
         gap: 1rem;
        
+    }
+    .learning_box{
+        width: 95%;
     }
     .learning_heading{
         font-size: 32px;
